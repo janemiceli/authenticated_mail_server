@@ -1,0 +1,306 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>lsMailServer</name>
+    </assembly>
+    <members>
+        <member name="T:LumiSoft.MailServer.SCore">
+            <summary>
+            Server utility functions.
+            </summary>
+        </member>
+        <member name="M:LumiSoft.MailServer.SCore.WriteLog(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="fileName"></param>
+            <param name="text"></param>
+        </member>
+        <member name="T:LumiSoft.MailServer.MailServer">
+            <summary>
+            Mail server service.
+            </summary>
+        </member>
+        <member name="M:LumiSoft.MailServer.MailServer.#ctor">
+            <summary>
+            Default constructor.
+            </summary>
+        </member>
+        <member name="M:LumiSoft.MailServer.MailServer.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:LumiSoft.MailServer.MailServer.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:LumiSoft.MailServer.MailServer.OnStart(System.String[])">
+            <summary>
+            Set things in motion so your service can do its work.
+            </summary>
+        </member>
+        <member name="M:LumiSoft.MailServer.MailServer.OnStop">
+            <summary>
+            Stop this service.
+            </summary>
+        </member>
+        <member name="M:LumiSoft.MailServer.MailServer.Ip_to_longStr(System.String)">
+            <summary>
+            Removes points from ip and fill all blocks eg.(10.0.0.1 = 10 000 000 001).
+            </summary>
+            <param name="ip"></param>
+            <returns></returns>
+        </member>
+        <member name="P:LumiSoft.MailServer.MailServer.API">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:LumiSoft.MailServer.RelayInfo">
+            <summary>
+            This class parses relay info from message.
+            </summary>
+        </member>
+        <member name="M:LumiSoft.MailServer.RelayInfo.#ctor(System.IO.Stream,System.Int32,System.Int32)">
+            <summary>
+            Default constructor.
+            </summary>
+            <param name="relayMsgStrm">Message stream from to read relay info.</param>
+            <param name="undelivered">Specifies hours when message is readed to be undelivered.</param>
+            <param name="undeliveredWarning">Specifies minutes when delayed delivery warning is sent.</param>
+        </member>
+        <member name="M:LumiSoft.MailServer.RelayInfo.ReadRelayInfo(System.IO.Stream)">
+            <summary>
+            Parses relay info from stream.
+            </summary>
+            <param name="relayMsgStrm"></param>
+        </member>
+        <member name="P:LumiSoft.MailServer.RelayInfo.To">
+            <summary>
+            Gets recipient.
+            </summary>
+        </member>
+        <member name="P:LumiSoft.MailServer.RelayInfo.From">
+            <summary>
+            Gets sender.
+            </summary>
+        </member>
+        <member name="P:LumiSoft.MailServer.RelayInfo.MessageDate">
+            <summary>
+            Gets message store date.
+            </summary>
+        </member>
+        <member name="P:LumiSoft.MailServer.RelayInfo.IsUndeliveredWarningSent">
+            <summary>
+            Gets if undelivered warning is sent.
+            </summary>
+        </member>
+        <member name="P:LumiSoft.MailServer.RelayInfo.IsUndeliveredDateExceeded">
+            <summary>
+            Gets if undelivered date is exceeded.
+            </summary>
+        </member>
+        <member name="P:LumiSoft.MailServer.RelayInfo.MustSendWarning">
+            <summary>
+            Gets if must send undelivered warning.
+            </summary>
+        </member>
+        <member name="P:LumiSoft.MailServer.RelayInfo.WarningBitPos">
+            <summary>
+            Gets undelivered bit position in stream.
+            </summary>
+        </member>
+        <member name="P:LumiSoft.MailServer.RelayInfo.MessageStartPos">
+            <summary>
+            Gets message start position in stream.
+            </summary>
+        </member>
+        <member name="P:LumiSoft.MailServer.RelayInfo.DeviveringForHours">
+            <summary>
+            Gets how many hours server will try to send message.
+            </summary>
+        </member>
+        <member name="T:LumiSoft.MailServer.Error">
+            <summary>
+            Error handling.
+            </summary>
+        </member>
+        <member name="M:LumiSoft.MailServer.Error.DumpError(System.Exception,System.Diagnostics.StackTrace)">
+            <summary>
+            Writes error to error log file.
+            </summary>
+            <param name="x"></param>
+            <param name="stackTrace"></param>
+        </member>
+        <member name="P:LumiSoft.MailServer.Error.ErrorFilePath">
+            <summary>
+            Gets or sets error file path.
+            </summary>
+        </member>
+        <member name="T:lsMailServer.wfrm_Tray">
+            <summary>
+            Summary description for wfrm_Tray.
+            </summary>
+        </member>
+        <member name="M:lsMailServer.wfrm_Tray.#ctor">
+            <summary>
+            Default constructor.
+            </summary>
+        </member>
+        <member name="M:lsMailServer.wfrm_Tray.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:lsMailServer.wfrm_Tray.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:LumiSoft.MailServer.Relay">
+            <summary>
+            Mail relayer.
+            </summary>
+        </member>
+        <member name="M:LumiSoft.MailServer.Relay.#ctor(LumiSoft.MailServer.MailServer)">
+            <summary>
+            Default constructor.
+            </summary>
+            <param name="server"></param>
+        </member>
+        <member name="M:LumiSoft.MailServer.Relay.Deliver">
+            <summary>
+            Sends relay mails.
+            </summary>
+        </member>
+        <member name="M:LumiSoft.MailServer.Relay.DeliverRetry">
+            <summary>
+            Sends retry(mails which couldn't be sent at immedeately) relay mails.
+            </summary>
+        </member>
+        <member name="M:LumiSoft.MailServer.Relay.RelayMails">
+            <summary>
+            Relays all messages from relay directory.
+            </summary>
+        </member>
+        <member name="M:LumiSoft.MailServer.Relay.SendRetryMails">
+            <summary>
+            Relay retry mails from retry directory.
+            </summary>
+        </member>
+        <member name="M:LumiSoft.MailServer.Relay.MakeUndeliveredNotify(LumiSoft.MailServer.RelayInfo,System.String,System.IO.Stream)">
+            <summary>
+            Creates undelivered notify for user and places it to relay folder.
+            </summary>
+            <param name="relayInfo">Relay info</param>
+            <param name="error">SMTP returned error text.</param>
+            <param name="file">Messsage file.</param>
+        </member>
+        <member name="M:LumiSoft.MailServer.Relay.MakeUndeliveredWarning(LumiSoft.MailServer.RelayInfo,System.String,System.IO.Stream)">
+            <summary>
+            Creates undelivered warning for user and places it to relay folder.
+            </summary>
+            <param name="relayInfo">Relay info</param>
+            <param name="error">SMTP returned error text.</param>
+            <param name="file">Messsage file.</param>
+        </member>
+        <member name="P:LumiSoft.MailServer.Relay.MaxRelayThreads">
+            <summary>
+            Gets or sets maximum relay threads.
+            </summary>
+        </member>
+        <member name="P:LumiSoft.MailServer.Relay.RelayInterval">
+            <summary>
+            Gets or sets relay interval.
+            </summary>
+        </member>
+        <member name="P:LumiSoft.MailServer.Relay.RelayRetryInterval">
+            <summary>
+            Gets or sets relay retry(delayed relay) interval.
+            </summary>
+        </member>
+        <member name="P:LumiSoft.MailServer.Relay.RelayUndelWarning">
+            <summary>
+            Gets or sets undelivered wanrning minutes.
+            </summary>
+        </member>
+        <member name="P:LumiSoft.MailServer.Relay.UndelWarningTemplate">
+            <summary>
+            Gets or sets undelivered wanrning reply template.
+            </summary>
+        </member>
+        <member name="P:LumiSoft.MailServer.Relay.RelayUndelivered">
+            <summary>
+            Gets or sets undelivered hours.
+            </summary>
+        </member>
+        <member name="P:LumiSoft.MailServer.Relay.UndeliveredTemplate">
+            <summary>
+            Gets or sets undelivered reply template.
+            </summary>
+        </member>
+        <member name="P:LumiSoft.MailServer.Relay.StoreUndeliveredMessages">
+            <summary>
+            Gets or sets stroe undelivered messages.
+            </summary>
+        </member>
+        <member name="P:LumiSoft.MailServer.Relay.UseSmartHost">
+            <summary>
+            Gets or sets if to use smart host.
+            </summary>
+        </member>
+        <member name="P:LumiSoft.MailServer.Relay.SmartHost">
+            <summary>
+            Gets or sets smart host.
+            </summary>
+        </member>
+        <member name="P:LumiSoft.MailServer.Relay.Dns1">
+            <summary>
+            Gets or sets smart host.
+            </summary>
+        </member>
+        <member name="P:LumiSoft.MailServer.Relay.Dns2">
+            <summary>
+            Gets or sets smart host.
+            </summary>
+        </member>
+        <member name="P:LumiSoft.MailServer.Relay.IsDelivering">
+            <summary>
+            Gets if delivering messages.
+            </summary>
+        </member>
+        <member name="P:LumiSoft.MailServer.Relay.IsDeliveringRetry">
+            <summary>
+            Gets if delivering retry messages.
+            </summary>
+        </member>
+        <member name="T:LumiSoft.MailServer.Installer1">
+            <summary>
+            Mail server service installer.
+            </summary>
+        </member>
+        <member name="F:LumiSoft.MailServer.Installer1.components">
+            Required designer variable.
+        </member>
+        <member name="M:LumiSoft.MailServer.Installer1.#ctor">
+            <summary>
+            Default constructor.
+            </summary>
+        </member>
+        <member name="M:LumiSoft.MailServer.Installer1.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:lsMailServer.MainX">
+            <summary>
+            Summary description for MainX.
+            </summary>
+        </member>
+    </members>
+</doc>

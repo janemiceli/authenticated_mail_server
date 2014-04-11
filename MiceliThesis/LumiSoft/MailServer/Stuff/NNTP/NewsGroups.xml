@@ -1,0 +1,11 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>  
+  <NewsGroups>
+    <Name>test.lumisoft.ee</Name>
+    <Date>10/Aug/2003</Date>
+  </NewsGroups>
+  <NewsGroups>
+    <Name>general.lumisoft.ee</Name>
+    <Date>10/Aug/2003</Date>
+  </NewsGroups>
+</NewDataSet>

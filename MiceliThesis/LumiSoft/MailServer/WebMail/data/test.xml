@@ -1,0 +1,61 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true">
+      <xs:complexType>
+        <xs:choice maxOccurs="unbounded">
+          <xs:element name="Settings">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Email" type="xs:string" minOccurs="0" />
+                <xs:element name="DeleteFolder" type="xs:string" minOccurs="0" />
+                <xs:element name="SentFolder" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Contacts">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ForName" type="xs:string" minOccurs="0" />
+                <xs:element name="SurName" type="xs:string" minOccurs="0" />
+                <xs:element name="Email" type="xs:string" minOccurs="0" />
+                <xs:element name="Phone1" type="xs:string" minOccurs="0" />
+                <xs:element name="Phone2" type="xs:string" minOccurs="0" />
+                <xs:element name="ContactID" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <Settings>
+    <Email>test@test.lumisoft.ee</Email>
+    <DeleteFolder>Deleted Items</DeleteFolder>
+    <SentFolder>Sent Items</SentFolder>
+  </Settings>
+  <Contacts>
+    <ForName>Test</ForName>
+    <SurName>LumiSoft</SurName>
+    <Email>test@test.lumisoft.ee</Email>
+    <Phone1 />
+    <Phone2 />
+    <ContactID>36a5d898-a8dd-4cf3-bc97-7ee964c1896b</ContactID>
+  </Contacts>
+  <Contacts>
+    <ForName>Ivar</ForName>
+    <SurName />
+    <Email>ivar@lumisoft.ee</Email>
+    <Phone1 />
+    <Phone2 />
+    <ContactID>ce06dacf-5fd5-4ae5-8fbb-8c20f2126d5c</ContactID>
+  </Contacts>
+  <Contacts>
+    <ForName>Kaido</ForName>
+    <SurName />
+    <Email>kaido@lumisoft.ee</Email>
+    <Phone1 />
+    <Phone2 />
+    <ContactID>d8afbeb3-dfc3-4684-b2ae-9ff664b6edd9</ContactID>
+  </Contacts>
+</NewDataSet>

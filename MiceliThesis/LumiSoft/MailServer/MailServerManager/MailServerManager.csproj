@@ -1,0 +1,289 @@
+﻿<Project DefaultTargets="Build" ToolsVersion="3.5" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.20706</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{073CB522-1881-412E-8359-0F31702E2CE3}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>App.ico</ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>MailServerManager</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>MailServerManager</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>MailServerManager.MainX</StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>0.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>..\Application\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>..\Application\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="LumiSoft.MailServerAPI">
+      <Name>LumiSoft.MailServerAPI</Name>
+      <HintPath>..\LumiSoft\MailServer\Application\Debug\LumiSoft.MailServerAPI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="LumiSoft.Net">
+      <Name>LumiSoft.Net</Name>
+      <HintPath>..\Application\Debug\LumiSoft.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="LumiSoft.UI">
+      <Name>LumiSoft.UI</Name>
+      <HintPath>..\..\UI\TestUI\bin\Debug\LumiSoft.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App.ico" />
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controls\NoActiveCellColumn.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\WDataGrid.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\wfrm_AddServer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\wfrm_Alias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\wfrm_Aliases.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\wfrm_Domain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\wfrm_Domains.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\wfrm_EditUndeliveredText.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\wfrm_Error.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\wfrm_Filter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\wfrm_Filters.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\wfrm_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\wfrm_Route.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\wfrm_Routing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\wfrm_Security.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\wfrm_SecurityEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\wfrm_Server.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\wfrm_Servers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\wfrm_System_Delivery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\wfrm_System_Frame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\wfrm_System_General.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\wfrm_System_IMAP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\wfrm_System_POP3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\wfrm_System_SMTP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\wfrm_Users.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\wfrm_User_Frame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\wfrm_User_General.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\wfrm_User_Pop3Rem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainX.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="Controls\WDataGrid.resx">
+      <DependentUpon>WDataGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\wfrm_AddServer.resx">
+      <DependentUpon>wfrm_AddServer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\wfrm_Alias.resx">
+      <DependentUpon>wfrm_Alias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\wfrm_Aliases.resx">
+      <DependentUpon>wfrm_Aliases.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\wfrm_Domain.resx">
+      <DependentUpon>wfrm_Domain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\wfrm_Domains.resx">
+      <DependentUpon>wfrm_Domains.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\wfrm_EditUndeliveredText.resx">
+      <DependentUpon>wfrm_EditUndeliveredText.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\wfrm_Error.resx">
+      <DependentUpon>wfrm_Error.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\wfrm_Filter.resx">
+      <DependentUpon>wfrm_Filter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\wfrm_Filters.resx">
+      <DependentUpon>wfrm_Filters.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\wfrm_Main.resx">
+      <DependentUpon>wfrm_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\wfrm_Route.resx">
+      <DependentUpon>wfrm_Route.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\wfrm_Routing.resx">
+      <DependentUpon>wfrm_Routing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\wfrm_Security.resx">
+      <DependentUpon>wfrm_Security.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\wfrm_SecurityEntry.resx">
+      <DependentUpon>wfrm_SecurityEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\wfrm_Server.resx">
+      <DependentUpon>wfrm_Server.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\wfrm_Servers.resx">
+      <DependentUpon>wfrm_Servers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\wfrm_System_Delivery.resx">
+      <DependentUpon>wfrm_System_Delivery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\wfrm_System_Frame.resx">
+      <DependentUpon>wfrm_System_Frame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\wfrm_System_General.resx">
+      <DependentUpon>wfrm_System_General.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\wfrm_System_IMAP.resx">
+      <DependentUpon>wfrm_System_IMAP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\wfrm_System_POP3.resx">
+      <DependentUpon>wfrm_System_POP3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\wfrm_System_SMTP.resx">
+      <DependentUpon>wfrm_System_SMTP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\wfrm_Users.resx">
+      <DependentUpon>wfrm_Users.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\wfrm_User_Frame.resx">
+      <DependentUpon>wfrm_User_Frame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\wfrm_User_General.resx">
+      <DependentUpon>wfrm_User_General.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\wfrm_User_Pop3Rem.resx">
+      <DependentUpon>wfrm_User_Pop3Rem.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Tmp\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,992 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>LumiSoft.MailServerAPI</name>
+    </assembly>
+    <members>
+        <member name="T:LumiSoft.MailServer._Core">
+            <summary>
+            Summary description for _Core.
+            </summary>
+        </member>
+        <member name="M:LumiSoft.MailServer._Core.InitWebService(System.String,System.String,System.String,System.Web.Services.Protocols.SoapHttpClientProtocol)">
+            <summary>
+            Sets WebService propeties (url,UserName, ...).
+            </summary>
+            <param name="url"></param>
+            <param name="userName"></param>
+            <param name="password"></param>
+            <param name="webService"></param>
+        </member>
+        <member name="T:LumiSoft.MailServer.FilterResult">
+            <summary>
+            Specifies filtering result.
+            </summary>
+        </member>
+        <member name="F:LumiSoft.MailServer.FilterResult.Store">
+            <summary>
+            Store messge and reply Ok to client.
+            </summary>
+        </member>
+        <member name="F:LumiSoft.MailServer.FilterResult.DontStore">
+            <summary>
+            Don't store messge, but reply Ok to client.
+            </summary>
+        </member>
+        <member name="F:LumiSoft.MailServer.FilterResult.Error">
+            <summary>
+            [Reserved, NOT USED at moment]Send filtering error to client.
+            </summary>
+        </member>
+        <member name="T:LumiSoft.MailServer.ISmtpMessageFilter">
+            <summary>
+            SMTP server mail message filter.
+            </summary>
+        </member>
+        <member name="M:LumiSoft.MailServer.ISmtpMessageFilter.Filter(System.IO.MemoryStream,System.IO.MemoryStream@,System.String,System.String[],LumiSoft.MailServer.ServerAPI)">
+            <summary>
+            Filters message.
+            </summary>
+            <param name="messageStream">Message stream which to filter.</param>
+            <param name="filteredStream">Filtered stream.</param>
+            <param name="sender">Senders email address.</param>
+            <param name="recipients">Recipients email addresses.</param>
+            <param name="api">Access to server API.</param>
+        </member>
+        <member name="T:RemoteAdmin">
+            <remarks/>
+        </member>
+        <member name="M:RemoteAdmin.#ctor">
+            <remarks/>
+        </member>
+        <member name="M:RemoteAdmin.GetDomainList">
+            <remarks/>
+        </member>
+        <member name="M:RemoteAdmin.BeginGetDomainList(System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:RemoteAdmin.EndGetDomainList(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:RemoteAdmin.AddDomain(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RemoteAdmin.BeginAddDomain(System.String,System.String,System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:RemoteAdmin.EndAddDomain(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:RemoteAdmin.DeleteDomain(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RemoteAdmin.BeginDeleteDomain(System.String,System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:RemoteAdmin.EndDeleteDomain(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:RemoteAdmin.DomainExists(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RemoteAdmin.BeginDomainExists(System.String,System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:RemoteAdmin.EndDomainExists(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:RemoteAdmin.GetUserList(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RemoteAdmin.BeginGetUserList(System.String,System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:RemoteAdmin.EndGetUserList(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:RemoteAdmin.AddUser(System.String,System.String,System.String,System.String,System.String,System.String,System.Int32,System.Boolean,System.Boolean,System.Byte[])">
+            <remarks/>
+        </member>
+        <member name="M:RemoteAdmin.BeginAddUser(System.String,System.String,System.String,System.String,System.String,System.String,System.Int32,System.Boolean,System.Boolean,System.Byte[],System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:RemoteAdmin.EndAddUser(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:RemoteAdmin.DeleteUser(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RemoteAdmin.BeginDeleteUser(System.String,System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:RemoteAdmin.EndDeleteUser(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:RemoteAdmin.UpdateUser(System.String,System.String,System.String,System.String,System.String,System.String,System.Int32,System.Boolean,System.Boolean,System.Byte[])">
+            <remarks/>
+        </member>
+        <member name="M:RemoteAdmin.BeginUpdateUser(System.String,System.String,System.String,System.String,System.String,System.String,System.Int32,System.Boolean,System.Boolean,System.Byte[],System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:RemoteAdmin.EndUpdateUser(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:RemoteAdmin.MailboxExists(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RemoteAdmin.BeginMailboxExists(System.String,System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:RemoteAdmin.EndMailboxExists(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:RemoteAdmin.EmailAddressExists(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RemoteAdmin.BeginEmailAddressExists(System.String,System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:RemoteAdmin.EndEmailAddressExists(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:RemoteAdmin.GetAliasesList(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RemoteAdmin.BeginGetAliasesList(System.String,System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:RemoteAdmin.EndGetAliasesList(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:RemoteAdmin.AddAlias(System.String,System.String,System.String,System.String,System.Boolean)">
+            <remarks/>
+        </member>
+        <member name="M:RemoteAdmin.BeginAddAlias(System.String,System.String,System.String,System.String,System.Boolean,System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:RemoteAdmin.EndAddAlias(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:RemoteAdmin.DeleteAlias(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RemoteAdmin.BeginDeleteAlias(System.String,System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:RemoteAdmin.EndDeleteAlias(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:RemoteAdmin.UpdateAlias(System.String,System.String,System.String,System.String,System.String,System.Boolean)">
+            <remarks/>
+        </member>
+        <member name="M:RemoteAdmin.BeginUpdateAlias(System.String,System.String,System.String,System.String,System.String,System.Boolean,System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:RemoteAdmin.EndUpdateAlias(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:RemoteAdmin.GetRouteList">
+            <remarks/>
+        </member>
+        <member name="M:RemoteAdmin.BeginGetRouteList(System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:RemoteAdmin.EndGetRouteList(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:RemoteAdmin.AddRoute(System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RemoteAdmin.BeginAddRoute(System.String,System.String,System.String,System.String,System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:RemoteAdmin.EndAddRoute(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:RemoteAdmin.DeleteRoute(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RemoteAdmin.BeginDeleteRoute(System.String,System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:RemoteAdmin.EndDeleteRoute(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:RemoteAdmin.UpdateRoute(System.String,System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RemoteAdmin.BeginUpdateRoute(System.String,System.String,System.String,System.String,System.String,System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:RemoteAdmin.EndUpdateRoute(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:RemoteAdmin.GetSecurityList">
+            <remarks/>
+        </member>
+        <member name="M:RemoteAdmin.BeginGetSecurityList(System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:RemoteAdmin.EndGetSecurityList(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:RemoteAdmin.AddSecurityEntry(System.String,System.String,System.String,System.String,System.String,System.Int64,System.Int64)">
+            <remarks/>
+        </member>
+        <member name="M:RemoteAdmin.BeginAddSecurityEntry(System.String,System.String,System.String,System.String,System.String,System.Int64,System.Int64,System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:RemoteAdmin.EndAddSecurityEntry(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:RemoteAdmin.DeleteSecurityEntry(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RemoteAdmin.BeginDeleteSecurityEntry(System.String,System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:RemoteAdmin.EndDeleteSecurityEntry(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:RemoteAdmin.UpdateSecurityEntry(System.String,System.String,System.String,System.String,System.String,System.String,System.Int64,System.Int64)">
+            <remarks/>
+        </member>
+        <member name="M:RemoteAdmin.BeginUpdateSecurityEntry(System.String,System.String,System.String,System.String,System.String,System.String,System.Int64,System.Int64,System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:RemoteAdmin.EndUpdateSecurityEntry(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:RemoteAdmin.GetFilterList">
+            <remarks/>
+        </member>
+        <member name="M:RemoteAdmin.BeginGetFilterList(System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:RemoteAdmin.EndGetFilterList(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:RemoteAdmin.AddFilter(System.String,System.String,System.String,System.Int32,System.Boolean)">
+            <remarks/>
+        </member>
+        <member name="M:RemoteAdmin.BeginAddFilter(System.String,System.String,System.String,System.Int32,System.Boolean,System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:RemoteAdmin.EndAddFilter(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:RemoteAdmin.DeleteFilter(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:RemoteAdmin.BeginDeleteFilter(System.String,System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:RemoteAdmin.EndDeleteFilter(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:RemoteAdmin.UpdateFilter(System.String,System.String,System.String,System.String,System.Int32,System.Boolean)">
+            <remarks/>
+        </member>
+        <member name="M:RemoteAdmin.BeginUpdateFilter(System.String,System.String,System.String,System.String,System.Int32,System.Boolean,System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:RemoteAdmin.EndUpdateFilter(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:RemoteAdmin.CreateBackUp">
+            <remarks/>
+        </member>
+        <member name="M:RemoteAdmin.BeginCreateBackUp(System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:RemoteAdmin.EndCreateBackUp(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:RemoteAdmin.RestoreBackUp(System.Byte[])">
+            <remarks/>
+        </member>
+        <member name="M:RemoteAdmin.BeginRestoreBackUp(System.Byte[],System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:RemoteAdmin.EndRestoreBackUp(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:RemoteAdmin.GetSettings">
+            <remarks/>
+        </member>
+        <member name="M:RemoteAdmin.BeginGetSettings(System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:RemoteAdmin.EndGetSettings(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:RemoteAdmin.UpdateSettings(System.Data.DataSet)">
+            <remarks/>
+        </member>
+        <member name="M:RemoteAdmin.BeginUpdateSettings(System.Data.DataSet,System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:RemoteAdmin.EndUpdateSettings(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="T:System.Security.Cryptography.HMACMD5">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:System.Security.Cryptography.HMACMD5.#ctor(System.Byte[])">
+            <summary>
+            Rfc 2104.
+            </summary>
+            <param name="rgbKey"></param>
+        </member>
+        <member name="M:System.Security.Cryptography.HMACMD5.Initialize">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:System.Security.Cryptography.HMACMD5.HashCore(System.Byte[],System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="rgb"></param>
+            <param name="ib"></param>
+            <param name="cb"></param>
+        </member>
+        <member name="M:System.Security.Cryptography.HMACMD5.HashFinal">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:System.Security.Cryptography.HMACMD5.Key">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:LumiSoft.MailServer.WSqlCommand">
+            <summary>
+            Summary description for WSqlCommand.
+            </summary>
+        </member>
+        <member name="M:LumiSoft.MailServer.WSqlCommand.#ctor(System.String,System.String)">
+            <summary>
+            Default constructor.
+            </summary>
+            <param name="connectionString">Connection string.</param>
+            <param name="commandText">Command text.</param>
+        </member>
+        <member name="M:LumiSoft.MailServer.WSqlCommand.AddParameter(System.String,System.Data.SqlDbType,System.Object)">
+            <summary>
+            Adds parameter to Sql Command.
+            </summary>
+            <param name="name">Parameter name.</param>
+            <param name="dbType">Parameter datatype.</param>
+            <param name="value">Parameter value.</param>
+        </member>
+        <member name="M:LumiSoft.MailServer.WSqlCommand.Execute">
+            <summary>
+            Executes command.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:LumiSoft.MailServer.WSqlCommand.CommandTimeout">
+            <summary>
+            Gets or sets command timeout time.
+            </summary>
+        </member>
+        <member name="P:LumiSoft.MailServer.WSqlCommand.CommandType">
+            <summary>
+            Gets or sets command type.
+            </summary>
+        </member>
+        <member name="T:WebServices.RemoteAdmin">
+            <summary>
+            Summary description for WConnectionCheck_Web.
+            </summary>
+        </member>
+        <member name="M:WebServices.RemoteAdmin.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:WebServices.RemoteAdmin.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:WebServices.RemoteAdmin.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="T:LumiSoft.MailServer.DB_Type">
+            <summary>
+            Specifies server database type.
+            </summary>
+        </member>
+        <member name="F:LumiSoft.MailServer.DB_Type.XML">
+            <summary>
+            Data will be stored to XML.
+            </summary>
+        </member>
+        <member name="F:LumiSoft.MailServer.DB_Type.MSSQL">
+            <summary>
+            Data will be stored to MS SQL.
+            </summary>
+        </member>
+        <member name="F:LumiSoft.MailServer.DB_Type.WebServices">
+            <summary>
+            For remote administration only.
+            </summary>
+        </member>
+        <member name="T:LumiSoft.MailServer.ServerAPI">
+            <summary>
+            MAilserver API.
+            </summary>
+        </member>
+        <member name="M:LumiSoft.MailServer.ServerAPI.#ctor(System.String)">
+            <summary>
+            Default constructor.
+            </summary>
+            <param name="dataPath"></param>
+        </member>
+        <member name="M:LumiSoft.MailServer.ServerAPI.#ctor(System.String,System.String,System.String,System.String)">
+            <summary>
+            For administration only.
+            </summary>
+            <param name="dataPath"></param>
+            <param name="webServicesUrl"></param>
+            <param name="webServicesUser"></param>
+            <param name="webServicesPwd"></param>
+        </member>
+        <member name="M:LumiSoft.MailServer.ServerAPI.GetDomainList">
+            <summary>
+            Gets DomainName list.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:LumiSoft.MailServer.ServerAPI.AddDomain(System.String,System.String)">
+            <summary>
+            Adds new DomainName.
+            </summary>
+            <param name="domainName"></param>
+            <param name="description"></param>
+            <returns>If successful returns DomainName ID, otherwise null.</returns>
+        </member>
+        <member name="M:LumiSoft.MailServer.ServerAPI.DeleteDomain(System.String)">
+            <summary>
+            Deletes specified DomainName.
+            </summary>
+            <param name="domainID"></param>
+            <returns>Returns true if DomainName deleted successfully.</returns>
+        </member>
+        <member name="M:LumiSoft.MailServer.ServerAPI.DomainExists(System.String)">
+            <summary>
+            Checks if specified DomainName exists.
+            </summary>
+            <param name="source">DomainName or Emails address.</param>
+            <returns></returns>
+        </member>
+        <member name="M:LumiSoft.MailServer.ServerAPI.GetUserList(System.String)">
+            <summary>
+            Gets user list in specified DomainName.
+            </summary>
+            <param name="domainID">DomainID of Domain which user list to retrieve.To get all use value 'ALL'.</param>
+            <returns></returns>
+        </member>
+        <member name="M:LumiSoft.MailServer.ServerAPI.AddUser(System.String,System.String,System.String,System.String,System.String,System.String,System.Int32,System.Boolean,System.Boolean,System.Byte[])">
+            <summary>
+            Adds new user to specified DomainName.
+            </summary>
+            <param name="fullName">User full name.</param>
+            <param name="userName">User login name.</param>
+            <param name="password">User login password.</param>
+            <param name="Description">User Description.</param>
+            <param name="emails">User Emails addresses.</param>
+            <param name="domainID">DomainName ID of DomainName where to add user.</param>
+            <param name="mailboxSize">Maximum mailbox size.</param>
+            <param name="enabled">Sepcifies if user is enabled.</param>
+            <param name="allowRelay">Specifies if user can relay.</param>
+            <param name="remPop3Accounts">Byte DataSet Pop3RemServSchema or null.</param>
+            <returns></returns>
+        </member>
+        <member name="M:LumiSoft.MailServer.ServerAPI.DeleteUser(System.String)">
+            <summary>
+            Deletes user.
+            </summary>
+            <param name="userID">UserID of the user which to delete.</param>
+        </member>
+        <member name="M:LumiSoft.MailServer.ServerAPI.UpdateUser(System.String,System.String,System.String,System.String,System.String,System.String,System.Int32,System.Boolean,System.Boolean,System.Byte[])">
+            <summary>
+            Updates new user to specified DomainName.
+            </summary>
+            <param name="userID"></param>
+            <param name="fullName">User full name.</param>
+            <param name="password">User login password.</param>
+            <param name="Description">User Description.</param>
+            <param name="emails">User Emails addresses.</param>
+            <param name="domainID">DomainName ID of DomainName where to add user.</param>
+            <param name="mailboxSize">Maximum mailbox size.</param>
+            <param name="enabled">Sepcifies if user is enabled.</param>
+            <param name="allowRelay">Specifies if user can relay.</param>
+            <param name="remPop3Accounts">Byte DataSet Pop3RemServSchema or null.</param>
+        </member>
+        <member name="M:LumiSoft.MailServer.ServerAPI.MailboxExists(System.String)">
+            <summary>
+            Checks if mailbox exists.
+            </summary>
+            <param name="userName">User name.</param>
+            <returns></returns>
+        </member>
+        <member name="M:LumiSoft.MailServer.ServerAPI.EmailAddressExists(System.String)">
+            <summary>
+            Checks if specifeid Emails address belongs to somebody in this server.
+            </summary>
+            <param name="emailAddress">Emails address which to check.</param>
+            <returns>Returns true if Emails address is found.</returns>
+        </member>
+        <member name="M:LumiSoft.MailServer.ServerAPI.MapUser(System.String)">
+            <summary>
+            Maps Emails address to mailbox.
+            </summary>
+            <param name="emailAddress"></param>
+            <returns>Returns mailbox or null if map failed.</returns>
+        </member>
+        <member name="M:LumiSoft.MailServer.ServerAPI.ValidateMailboxSize(System.String)">
+            <summary>
+            Checks if specified mailbox size is exceeded.
+            </summary>
+            <param name="mailbox"></param>
+            <returns>Returns true if exceeded.</returns>
+        </member>
+        <member name="M:LumiSoft.MailServer.ServerAPI.AuthUser(System.String,System.String,System.String,LumiSoft.Net.AuthType)">
+            <summary>
+            Authenticates user.
+            </summary>
+            <param name="userName">User name.</param>
+            <param name="passwData">Password data.</param>
+            <param name="authData">Authentication specific data(as tag).</param>
+            <param name="authType">Authentication type.</param>
+            <returns></returns>
+        </member>
+        <member name="M:LumiSoft.MailServer.ServerAPI.GetUserRemotePop3Servers(System.String)">
+            <summary>
+            Gets user pop3 remote server accounts.
+            </summary>
+            <param name="userName">User name which remote pop3 accounts to get.</param>
+            <returns></returns>
+        </member>
+        <member name="M:LumiSoft.MailServer.ServerAPI.GetAliasesList(System.String)">
+            <summary>
+            Gets aliases.
+            </summary>
+            <param name="DomainName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LumiSoft.MailServer.ServerAPI.AddAlias(System.String,System.String,System.String,System.String,System.Boolean)">
+            <summary>
+            Adds AliasName(mailing list).
+            </summary>
+            <param name="aliasName">AliasName name. eg. all@lumisoft.ee</param>
+            <param name="Description">AliasName Description.</param>
+            <param name="AliasMembers">AliasName AliasMembers.</param>
+            <param name="domainID">DomainID where AliasName belongs.</param>
+            <param name="isPublic">Specifies if accessible to public or only authenticated users.</param>
+            <returns></returns>
+        </member>
+        <member name="M:LumiSoft.MailServer.ServerAPI.DeleteAlias(System.String)">
+            <summary>
+            Deletes specified AliasName.
+            </summary>
+            <param name="aliasID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LumiSoft.MailServer.ServerAPI.UpdateAlias(System.String,System.String,System.String,System.String,System.String,System.Boolean)">
+            <summary>
+            Updates AliasName.
+            </summary>
+            <param name="aliasID"></param>
+            <param name="aliasName">AliasName name. eg. all@lumisoft.ee</param>
+            <param name="Description">AliasName Description.</param>
+            <param name="AliasMembers"></param>
+            <param name="domainID">DomainID where AliasName belongs.</param>
+            <param name="isPublic">Specifies if accessible to public or only authenticated users.</param>
+        </member>
+        <member name="M:LumiSoft.MailServer.ServerAPI.GetAliasMembers(System.String)">
+            <summary>
+            Gets AliasName AliasMembers.
+            </summary>
+            <param name="emailAddress"></param>
+            <returns>Return null, if AliasName not found.</returns>
+        </member>
+        <member name="M:LumiSoft.MailServer.ServerAPI.IsAliasPublic(System.String)">
+            <summary>
+            Checks if alias is accessible for public(non authenticated users).
+            </summary>
+            <param name="emailAddress"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LumiSoft.MailServer.ServerAPI.GetRouteList">
+            <summary>
+            Gets Emails address routes.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:LumiSoft.MailServer.ServerAPI.AddRoute(System.String,System.String,System.String,System.String)">
+            <summary>
+            Adds new Emails route.
+            </summary>
+            <param name="pattern">Match pattern.</param>
+            <param name="mailbox">Mailbox to route.</param>
+            <param name="Description">Description.</param>
+            <param name="domainID">DomainName ID.</param>
+            <returns></returns>
+        </member>
+        <member name="M:LumiSoft.MailServer.ServerAPI.DeleteRoute(System.String)">
+            <summary>
+            Deletes route.
+            </summary>
+            <param name="routeID"></param>
+        </member>
+        <member name="M:LumiSoft.MailServer.ServerAPI.UpdateRoute(System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Updates Emails route.
+            </summary>
+            <param name="routeID"></param>
+            <param name="pattern"></param>
+            <param name="mailbox"></param>
+            <param name="Description"></param>
+            <param name="domainID"></param>
+        </member>
+        <member name="M:LumiSoft.MailServer.ServerAPI.GetMailboxFromPattern(System.String)">
+            <summary>
+            Gets mailbox from pattern.
+            </summary>
+            <param name="emailAddress"></param>
+            <returns>Returns mailbox,if any match or null for no match.</returns>
+        </member>
+        <member name="M:LumiSoft.MailServer.ServerAPI.GetMessageList(System.String,LumiSoft.Net.POP3.Server.POP3_Messages)">
+            <summary>
+            Gets Inbox messages info for specified user mailbox.
+            </summary>
+            <param name="mailBox"></param>
+            <param name="msgs"></param>
+        </member>
+        <member name="M:LumiSoft.MailServer.ServerAPI.GetMessagesInfo(System.String,System.String,LumiSoft.Net.IMAP.Server.IMAP_Messages)">
+            <summary>
+            Gets specified IMAP folder's messges info.
+            </summary>
+            <param name="userName"></param>
+            <param name="folder">IMAP folder which messages info to get. Eg. 'Inbox'.</param>
+            <param name="messages"></param>
+        </member>
+        <member name="M:LumiSoft.MailServer.ServerAPI.StoreMessage(System.String,System.String,System.IO.MemoryStream,System.String,System.String,System.Boolean,System.DateTime,LumiSoft.Net.IMAP.Server.IMAP_MessageFlags)">
+            <summary>
+            Stores message to specified mailbox.
+            </summary>
+            <param name="mailbox">Mailbox name.</param>
+            <param name="folder">Folder where to store message. Eg. 'Inbox'.</param>
+            <param name="msgStream">Stream where message has stored.</param>
+            <param name="to">Recipient email address.</param>
+            <param name="from">Sendred email address.</param>
+            <param name="isRelay">Specifies if message must be relayed.</param>
+            <param name="date">Recieve date.</param>
+            <param name="flags">Message flags.</param>
+        </member>
+        <member name="M:LumiSoft.MailServer.ServerAPI.StoreMessageFlags(System.String,System.String,LumiSoft.Net.IMAP.Server.IMAP_Message)">
+            <summary>
+            Stores IMAP message flags (\seen,\draft, ...).
+            </summary>
+            <param name="mailbox"></param>
+            <param name="folder"></param>
+            <param name="message"></param>
+        </member>
+        <member name="M:LumiSoft.MailServer.ServerAPI.DeleteMessage(System.String,System.String,System.String)">
+            <summary>
+            Deletes message from mailbox.
+            </summary>
+            <param name="mailbox">MailBox name.</param>
+            <param name="folder"></param>
+            <param name="msgID">MessageID.</param>
+        </member>
+        <member name="M:LumiSoft.MailServer.ServerAPI.GetMessage(System.String,System.String,System.String)">
+            <summary>
+            Gets message from mailbox.
+            </summary>
+            <param name="mailbox">Mailbox name.</param>
+            <param name="folder"></param>
+            <param name="msgID">MessageID</param>
+        </member>
+        <member name="M:LumiSoft.MailServer.ServerAPI.GetMessageTopLines(System.String,System.String,System.String,System.Int32)">
+            <summary>
+            Gets message header + number of specified lines.
+            </summary>
+            <param name="mailbox">Mailbox.</param>
+            <param name="folder">IMAP folder where message is.</param>
+            <param name="msgID">MessageID.</param>
+            <param name="nrLines">Number of lines to retrieve. NOTE: line counting starts at theend of header.</param>
+            <returns>Returns message header + number of specified lines.</returns>
+        </member>
+        <member name="M:LumiSoft.MailServer.ServerAPI.CopyMessage(System.String,System.String,System.String,LumiSoft.Net.IMAP.Server.IMAP_Message)">
+            <summary>
+            Creates copy of message to destination folder.
+            </summary>
+            <param name="mailbox">MailBox name.</param>
+            <param name="folder"></param>
+            <param name="destFolder"></param>
+            <param name="message"></param>
+        </member>
+        <member name="M:LumiSoft.MailServer.ServerAPI.GetFolders(System.String)">
+            <summary>
+            Gets all available IMAP folders.
+            </summary>
+            <param name="userName"></param>
+        </member>
+        <member name="M:LumiSoft.MailServer.ServerAPI.GetSubscribedFolders(System.String)">
+            <summary>
+            Gets subscribed IMAP folders.
+            </summary>
+            <param name="userName"></param>
+        </member>
+        <member name="M:LumiSoft.MailServer.ServerAPI.SubscribeFolder(System.String,System.String)">
+            <summary>
+            Subscribes new IMAP folder.
+            </summary>
+            <param name="userName"></param>
+            <param name="folder"></param>
+        </member>
+        <member name="M:LumiSoft.MailServer.ServerAPI.UnSubscribeFolder(System.String,System.String)">
+            <summary>
+            UnSubscribes IMAP folder.
+            </summary>
+            <param name="userName"></param>
+            <param name="folder"></param>
+        </member>
+        <member name="M:LumiSoft.MailServer.ServerAPI.CreateFolder(System.String,System.String)">
+            <summary>
+            Creates new IMAP folder.
+            </summary>
+            <param name="userName"></param>
+            <param name="folder"></param>
+        </member>
+        <member name="M:LumiSoft.MailServer.ServerAPI.DeleteFolder(System.String,System.String)">
+            <summary>
+            Deletes IMAP folder.
+            </summary>
+            <param name="userName"></param>
+            <param name="folder"></param>
+        </member>
+        <member name="M:LumiSoft.MailServer.ServerAPI.RenameFolder(System.String,System.String,System.String)">
+            <summary>
+            Renames IMAP folder.
+            </summary>
+            <param name="userName"></param>
+            <param name="folder"></param>
+            <param name="newFolder"></param>
+        </member>
+        <member name="M:LumiSoft.MailServer.ServerAPI.GetSecurityList">
+            <summary>
+            Gets security entries list.
+            </summary>
+        </member>
+        <member name="M:LumiSoft.MailServer.ServerAPI.AddSecurityEntry(System.String,System.String,System.String,System.String,System.String,System.Int64,System.Int64)">
+            <summary>
+            Adds secuity entry.
+            </summary>
+            <param name="Description"></param>
+            <param name="protocol"></param>
+            <param name="type"></param>
+            <param name="action"></param>
+            <param name="content"></param>
+            <param name="startIP"></param>
+            <param name="endIP"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LumiSoft.MailServer.ServerAPI.DeleteSecurityEntry(System.String)">
+            <summary>
+            Deletes security entry.
+            </summary>
+            <param name="securityID"></param>
+        </member>
+        <member name="M:LumiSoft.MailServer.ServerAPI.UpdateSecurityEntry(System.String,System.String,System.String,System.String,System.String,System.String,System.Int64,System.Int64)">
+            <summary>
+            Updates security entry.
+            </summary>
+            <param name="securityID"></param>
+            <param name="Description"></param>
+            <param name="protocol"></param>
+            <param name="type"></param>
+            <param name="action"></param>
+            <param name="content"></param>
+            <param name="startIP"></param>
+            <param name="endIP"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LumiSoft.MailServer.ServerAPI.IsRelayAllowedIP(System.String)">
+            <summary>
+            Checks if relay is allowed to specified IP.
+            </summary>
+            <param name="ip"></param>
+            <returns>Returns true if relay is allowed.</returns>
+        </member>
+        <member name="M:LumiSoft.MailServer.ServerAPI.IsRelayAllowedUser(System.String)">
+            <summary>
+            Checks if relay is allowed to specified user.
+            </summary>
+            <param name="user"></param>
+            <returns>Returns true if relay is allowed.</returns>
+        </member>
+        <member name="M:LumiSoft.MailServer.ServerAPI.IsSmtpAccessAllowed(System.String)">
+            <summary>
+            Checks if smtp access is allowed for specified IP.
+            </summary>
+            <param name="ip"></param>
+            <returns>Returns true if allowed.</returns>
+        </member>
+        <member name="M:LumiSoft.MailServer.ServerAPI.IsPop3AccessAllowed(System.String)">
+            <summary>
+            Checks if pop3 access is allowed for specified IP.
+            </summary>
+            <param name="ip"></param>
+            <returns>Returns true if allowed.</returns>
+        </member>
+        <member name="M:LumiSoft.MailServer.ServerAPI.GetFilterList">
+            <summary>
+            Gets filter list.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:LumiSoft.MailServer.ServerAPI.AddFilter(System.String,System.String,System.String,System.Int32,System.Boolean)">
+            <summary>
+            Adds new filter.
+            </summary>
+            <param name="description">Filter description</param>
+            <param name="assembly">Assembly with full location. Eg. C:\MailServer\Filters\filter.dll .</param>
+            <param name="className">Filter full class name, wih namespace. Eg. LumiSoft.MailServer.Fileters.Filter1 .</param>
+            <param name="cost">Filters are sorted by cost and proccessed with cost value. Smallest cost is proccessed first.</param>
+            <param name="enabled">Specifies if filter is enabled.</param>
+            <returns></returns>
+        </member>
+        <member name="M:LumiSoft.MailServer.ServerAPI.DeleteFilter(System.String)">
+            <summary>
+            Deletes specified filter.
+            </summary>
+            <param name="filterID">FilterID of the filter which to delete.</param>
+        </member>
+        <member name="M:LumiSoft.MailServer.ServerAPI.UpdateFilter(System.String,System.String,System.String,System.String,System.Int32,System.Boolean)">
+            <summary>
+            Updates specified filter.
+            </summary>		/// 
+            <param name="filterID">FilterID which to update.</param>
+            <param name="description">Filter description</param>
+            <param name="assembly">Assembly with full location. Eg. C:\MailServer\Filters\filter.dll .</param>
+            <param name="className">Filter full class name, wih namespace. Eg. LumiSoft.MailServer.Fileters.Filter1 .</param>
+            <param name="cost">Filters are sorted by cost and proccessed with cost value. Smallest cost is proccessed first.</param>
+            <param name="enabled">Specifies if filter is enabled.</param>
+            <returns></returns>
+        </member>
+        <member name="M:LumiSoft.MailServer.ServerAPI.CreateBackUp(System.String)">
+            <summary>
+            Backups all server.(settings,users,...).
+            </summary>
+            <param name="fileName">File name to which store backup.</param>
+        </member>
+        <member name="M:LumiSoft.MailServer.ServerAPI.CreateBackUp">
+            <summary>
+             Backups all server.(settings,users,...).
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:LumiSoft.MailServer.ServerAPI.RestoreBackUp(System.String)">
+            <summary>
+            Restores server from backup.(settings,users,...).
+            </summary>
+            <param name="fileName">File name from which to restore settings.</param>
+        </member>
+        <member name="M:LumiSoft.MailServer.ServerAPI.RestoreBackUp(System.Byte[])">
+            <summary>
+            Restores server from backup.(settings,users,...).
+            </summary>
+            <param name="data"></param>
+        </member>
+        <member name="M:LumiSoft.MailServer.ServerAPI.GetSettings">
+            <summary>
+            Gets mailserver core settings (ports,database type, ...).
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:LumiSoft.MailServer.ServerAPI.UpdateSettings(System.Data.DataSet)">
+            <summary>
+            Updates mailserver core settings (ports,database type, ...).
+            </summary>
+            <param name="dsSettings"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LumiSoft.MailServer.ServerAPI.LoadUsers">
+            <summary>
+            Loads users from xml file.
+            </summary>
+        </member>
+        <member name="M:LumiSoft.MailServer.ServerAPI.LoadAliases">
+            <summary>
+             Loads aliases from xml file.
+            </summary>
+        </member>
+        <member name="M:LumiSoft.MailServer.ServerAPI.LoadRouting">
+            <summary>
+             Loads routing from xml file.
+            </summary>
+        </member>
+        <member name="M:LumiSoft.MailServer.ServerAPI.LoadDomains">
+            <summary>
+             Loads domains from xml file.
+            </summary>
+        </member>
+        <member name="M:LumiSoft.MailServer.ServerAPI.LoadSecurity">
+            <summary>
+             Loads security from xml file.
+            </summary>
+        </member>
+        <member name="M:LumiSoft.MailServer.ServerAPI.LoadFilters">
+            <summary>
+             Loads filters from xml file.
+            </summary>
+        </member>
+        <member name="M:LumiSoft.MailServer.ServerAPI.CreatePop3RemServSchema(System.Data.DataSet)">
+            <summary>
+            Creates pop3 remote servers schema.
+            </summary>
+            <param name="ds"></param>
+        </member>
+        <member name="M:LumiSoft.MailServer.ServerAPI.CreateSettingsSchema(System.Data.DataSet)">
+            <summary>
+            
+            </summary>
+            <param name="ds"></param>
+        </member>
+        <member name="M:LumiSoft.MailServer.ServerAPI.DatabaseTypeChanged">
+            <summary>
+            Sets Settings.xml specified Database type.
+            </summary>
+        </member>
+        <member name="M:LumiSoft.MailServer.ServerAPI.GetNextUid(System.String,System.String)">
+            <summary>
+            Gets,stores and returns free UID.
+            </summary>
+            <param name="userName"></param>
+            <param name="mailbox"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LumiSoft.MailServer.ServerAPI.IsConnection(System.String,System.String,LumiSoft.MailServer.DB_Type)">
+            <summary>
+            Checks if database connection is ok.
+            </summary>
+            <param name="dataPath"></param>
+            <param name="conStr"></param>
+            <param name="dbType"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

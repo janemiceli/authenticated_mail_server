@@ -1,0 +1,58 @@
+
+
+*) IMAP FETCH BODYSTRUCTURE,BODY
+*) Rename Aliases -> Distribution Lists or Mailing Lists
+*) Move Mailing list "Members" database column to standalone table(lsMailingListMembers).
+   Add new functions to API (AddMailingListMember,DeleteMailingListMember,GetMailingListMembers).
+   This makes mailing list handling easier and allows very big lists.
+*) Move user email addresses "Addresses" database column to stand alone table(lsUserAddresses).
+   Add new functions to API (AddUserAddress,DeleteUserAddress,GetUserAddresses).
+*) Add postgresql support (Waiting some working .NET pgsql dataprovider)  
+*) Block continues bad logins (store bad logins ip to server mem, eg. if badLogin count > 10 (between last 5 minutes) 
+   just skip pwd check and return no as login failed)
+*) Web Administration
+*) Linux (Mono)
+*) Check MAIL FORM: address. May be blocks some % of spam messages.
+   Check also if local domain and this address exists.
+*) IMAP SEARCH command
+
+
+*) Block API to add duplicate rows. For example 2 users with same login name.
+*) Make API as interface and allow server to load module(dll) which completes API commands.
+   (This adds possibility to create custom API handlers. For example mssqlAPI.dll, xmlAPI.dll, pgsqlAPI.dll, ... )
+
+*) Tests for API+Server
+*) SMTP/POP3/IMAP AUTH (MD5-Digest)
+*) Relay (SMTP client) logging
+
+*) News server (NNTP) ??? Integrate with mail server or as separate project
+*) Jabber instant messageing ??? 
+
+
+??? *) Store filters to Sql ? (Now they are local)
+
+??? *) LDAP authentication 
+
+
+(Some help and suggestions would be nice, but it's always too much requested or hoped)
+                                                          
+     
+
+
+//// Future directions
+Real domains or virtual servers ?
+
+Real domains - each domain can listen on some or all IP's.This is almost same as now, but access can be limited to specific IP.
+For my opinion this isn't good idea, but many mailservers have choosen this way.
+
+virtual servers - each virtual server must be listen on his own IP (if only 1 virtual server, it can listen all IP's), 
+each server can have unlimited domains,users,aliases,... .
+??? One vitual server can't access other virual server mailboxes.
+
+
+  
+
+
+
+
+

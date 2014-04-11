@@ -1,0 +1,452 @@
+PLEASE contact AT ivar@lumisoft.ee if you found bug !!!
+
+
+//----------------------------------------
+version: 0.751 (25.09.2003)
+        *) Fix: Dns MX record resolver, don't get MX records if domain has multiple MX records with same preference.
+
+//----------------------------------------
+version: 0.75 (24.09.2003)
+        *) Fix: IMAP COPY command returned OK reply for every message, but need to return once.
+        *) Fix: Mail session with BDAT -> RSET(reset) > mail session with BDAT caused error "mscorlib:Cannot access a closed Stream.".      
+        *) Fix: Dns didn't sorted MX records by preference
+        *) Fix: Some code optimizations (IMAP)
+        *) Fix: Changeing DB type doesn't take affect before restart mailserver or computer.
+        *) New: Try all available SMTP hosts by MX preference order, if can't connect prefered host.
+        *) New: Use SMTP client BDAT if remote server supports if.This gives speed improvement, because no "period handling" must be done.
+        *) New: Added exact address routing possibility. Now is possible to use only * or *x or *x* or x.
+           NOTE: Sql users update procedures !!!
+        *) New: Added WebMail
+
+//----------------------------------------
+version: 0.74 (04.09.2003)
+        *) Fix: MS SQL procedures.sql was wrong file (auto scripting in EM manager doesn't worked ok).
+            SQL users just run this script to your MAIL database.
+        *) New: Cmd line virus scan support (VirusFilter)
+             See help.txt "Using virus scanner:" for more info.
+             (Needs testing and feedback)
+
+//----------------------------------------
+version: 0.73 (23.08.2003)
+        *) Fix: Manager UI Links for creating User, Domain, ... - didn't refresh UI,
+           added values appeared after closing and reopening UI.
+        *) New: Allow specify if alias is public or private (only authenticated users can access).
+        *) New: Added default domain. If in RCPT TO: domain isn't specified, then default domian is added.
+           Example: RCPT TO:<postmaster>, email = postmaster + "@" + DefaultDomain
+        *) REM: Removed built-in postmaster. Now postmaster address must be added manually for each domain.
+
+           NOTE for SQL users UPGRADE 0.72 to 0.73 !!!
+             1) Run script 072_to_073.sql.
+             2) Run script procedures.sql.            
+
+//----------------------------------------
+version: 0.72 (12.08.2003)
+        *) Fix SMTP BDAT command errors
+           1) CUNKING was misspelled, was CUNCKING instead of CUNKING
+           2) Cunking allowed only binary, now allows all mime types 
+        *) New: POP3 AUTH command, supports LOGIN CRAM-MD5 authentications.
+        *) New: Allow to enable/disable smtp/pop3/imap services.
+
+//----------------------------------------
+version: 0.71 (04.08.2003)
+        *) Fix: When database = sql, filters can't be used
+        *) New: Test button for dns server 
+        *) New: Added sql server support for IMAP
+           (Just run 07_to_071.sql and then procdures.sql to upgrade)
+           NOTE: Current mailboxes messages get LOST !!!
+        *) Fix: When database = sql, POP3 TOP command sended more lines than requested
+
+//----------------------------------------
+version: 0.7 (25.07.2003) 
+        *) Initial IMAP implementaion
+               Missing parts:
+	       *) sql server support
+               *) SEARCH command
+               *) some fetch types body bodystructure body[mime]
+
+        You can try it with outlook express 6.0,outlook XP or morzilla mail 1.4 (Others I haven't tried).
+
+        If you found some bugs, misbehaviour or got big knowledge about imap and have suggestions,
+        please be free to contact ivar@lumisoft.ee.
+
+        NOTE: Current mailboxes messages get LOST !!! 
+
+//----------------------------------------
+vesrion: 0.681  (10.07.2003)
+        *) Server didn't accept addresses containing '#'.
+
+//----------------------------------------
+vesrion: 0.68  (02.07.2003)
+SMTP AUTH CRAM-MD5 added, with this authentication passwords aren't transmitted over network.
+
+//----------------------------------------
+vesrion: 0.67  (28.06.2003)
+
+Smtp Filters adding GUI + API added. (Filters.xml, can't be used from old projects, you must use newone.)
+Now is possible to specify log file pahtes.
+
+//----------------------------------------
+vesrion: 0.66  (18.06.2003)
+Now is possible to run server as trayApp instead of service.
+Just add parameter trayapp to lsMialServer.exe. Eg. Target="lsMailServer.exe" trayapp.
+This adds win98 support !!!
+NOTE: running as service is suggested to later windows(2000,xp) users.
+
+//----------------------------------------
+vesrion: 0.651  (17.06.2003)
+Bug fix, release mode didn't work, because filters schema was missing.
+
+//----------------------------------------
+vesrion: 0.65  (11.06.2003)
+
+Added initial custom smtp filter support, UI isn't added yet.
+To try this feature, just add line(example commented in file, Release\Settings\Filters.xml) to Filters.xml.
+There is example filter too, lsSpamFilter project in mailserver root folder.  
+
+Allow +,= chars in email address.
+
+//----------------------------------------
+vesrion: 0.64  (24.05.2003)
+
+ManagerUI route form - when adding new route and domain wasn't selected. object NULL reference was raised.
+
+SQL procedure lspr_AddSecurityEbtry fix, adds true for enabled column. (Before raised error, NULLs isn't allowed ....)
+
+
+//----------------------------------------
+vesrion: 0.63  (07.05.2003)
+Server didn't accept addresses containing '*'.
+
+
+//----------------------------------------
+(29.04.2003)
+Fixed all net 1.0 obsoletes and removed all compile time warnings
+
+//----------------------------------------
+vesrion: 0.62  (26.04.2003)
+mail server rejected postmater address.
+
+//----------------------------------------
+vesrion: 0.61  (23.04.2003)
+prodedures.sql @x = null fixes, must be @x is null.
+
+
+//----------------------------------------
+vesrion: 0.6  (16.04.2003)
+
+Updated to NET 1.1.
+
+//----------------------------------------
+vesrion: 0.582  (11.03.2003)
+
+Bug FIX:
+string   emailAddress = sender; -> string   emailAddress = forward_path;
+(Result server didn't accept multiple recipients, this typo came with 0.58 modification)
+
+//----------------------------------------
+
+//----------------------------------------
+vesrion: 0.581  (01.03.2003)
+
+ReadReplyFromSocket -> ReadData. Some redesign in ReadData(ReadReplyFromSocket) method and _FixedStack,
+gives better performance.
+
+SMTP auth LOGIN fix.(If there was empty password, error was raised)
+
+//---------------------------------------
+
+//----------------------------------------
+vesrion: 0.58  (25.02.2003)
+
+_Core.ReadReplyFromSocket bug fix, check that recieved number of bytes == to expected.
+_Core.ReadData
+_Core:readLine
+SMTP_Client
+
+Fixes most server sending errors, mainly this affects w2k users.
+
+//---------------------------------------
+
+//----------------------------------------
+vesrion: 0.57  (20.02.2003)
+
+*) Undelivered/UndeliveredWarning to use server.smtp_Server_NewMailEvent
+(Don't store message to relay folder.) Now if using NAT router, IP NAT loopack enabled isn't
+neccesary any more.
+
+//---------------------------------------
+
+//----------------------------------------
+vesrion: 0.561  (18.02.2003)
+
+LSMailserverManger.exe, isn't compiled(contains old exe) by defult.
+
+//--------------------------------------
+
+//----------------------------------------
+vesrion: 0.56  (17.02.2003)
+
+If no MX records are found, but an A RR is found, the A RR is treated as MX.(Rfc 2821 .5)
+Now can deliver to domains without MX record.
+
+Allows to enable/disable user.
+Allows to Allow/Deny relay for user. (NOTE: if is user relay is denied, IP security isn't checked)
+
+//----------------------------------------
+
+//----------------------------------------
+vesrion: 0.55  (14.02.2003)
+
+New feature Remote pop3 accounts.
+There is possibility to add external pop3 accounts to server accounts.
+
+Pop3_Client bug fixes, must work ok now. 
+
+NOTE: sql users must add two new fields (AllowRelay(bit - def value = true),RemotePop3Servers(image)), see Tables.sql for more.
+Procedures must be reloaded from procedures.sql.
+
+//---------------------------------------
+
+//----------------------------------------
+vesrion: 0.54  (06.02.2003)
+TcpClients in LumiSoft.Net.dll -> raw Socket. (Pop3 client,Ftp client,Core functions)
+NetworkStream -> raw socket (Core functions) 
+(Don't use wrappers any more,better performance and less trouble)
+
+UI -> Delivery -> Store undelivered messages - can specify if to store them or not.
+(NOTE: <StoreUndeliveredMessages>True</StoreUndeliveredMessages> , must be added Settings.xml manually. **** !!!!!
+For more see Differences of yourOldSettings and new .xml files)
+
+SMTP.NOOP cmd error - terminated session session (Now just replies 250 ok - as required in rfc).
+
+LumiSoft.Net.AuthUser_EventArgs -> LumiSoft.Net.SMTP.Server.AuthUser_EventArgs
+LumiSoft.Net.AuthUser_EventArgs -> LumiSoft.Net.POP3.Server.AuthUser_EventArgs
+                            
+//----------------------------------------
+
+//----------------------------------------
+vesrion: 0.53
+
+TcpClient -> To raw Socket in smtp client.
+(Nt4 sending mail to unix box caused data loss - there is some error in TcpClient, but raw socket works ok.)
+
+
+//----------------------------------------
+
+//----------------------------------------
+vesrion: 0.52
+
+Relay message header's DateTime format moved to Invariant 'r' format.(rfc 1123 format)
+(This setting, now don't relay to system regional settings any more)
+
+//----------------------------------------
+
+//----------------------------------------
+vesrion: 0.51
+
+MailServer manager didn't accepted MSSQL database type.
+(Always was XML)   
+
+SMTP clinet added additional <CRLF> at the end of message.
+
+//----------------------------------------
+
+
+//----------------------------------------
+vesrion: 0.5
+
+Parameter parsing in SMTP server moved to Regex.
+For example now parses:
+(
+"From:<test@test-1.lumisoft.ee>";
+"From:test@test-1.lumisoft.ee";
+" From:<test@test-1.lumisoft.ee  > Size=10";
+"From:test@test-1.lumisoft.ee Size=10";
+"From:<test@test-1.lumisoft.ee";
+"From:test@test-1.lumisoft.ee>";
+
+...
+
+)
+
+New mailserver GUI - this is needed for remote management support.
+
+StreamLine reader had bug, for last line left <CR> at end of line.
+RelayInfo.MessagePos - reported wrong position.
+
+MailserverComponent removed and joined to LumiSoft.Net project.
+Some namespace changes eg. LumiSoft.MailServer.POP3 -> LumiSoft.Net.POP3
+
+
+//----------------------------------------
+
+//----------------------------------------
+vesrion: 0.4267
+
+HELO support in SMTP client added(when server doesn't support EHLO).
+
+//----------------------------------------
+
+
+//----------------------------------------
+vesrion: 0.426
+
+Core.DoPeriodHandling - rewritten, now don't use any Encoding anymore.
+        Does period handling directly to byte data.
+        Removes possible codepage problems.
+
+//----------------------------------------
+
+//----------------------------------------
+vesrion: 0.425
+
+Core.ReadReplyFromSocket - Terminator checking moved to Stack.
+        This approach uses less cpu and is faster.
+
+Core.ReadLineFromSocket - timeout is now 20 seconds, was 4. 
+
+Net.dll - Core.ReadLine() timeout is now 60 seconds, was 20. 
+          Enviroment.TickCount -> DateTeTime.Now.Ticks.
+
+
+//---------------------------------------
+
+//----------------------------------------
+vesrion: 0.424
+
+MailserverComponent Core.ReadReplyFromSocket timeout(Checking) and Encoding.Ascii(must be Default) bugs fix. 
+
+//---------------------------------------
+
+//----------------------------------------
+vesrion: 0.423
+
+Update security entry fixed (API).
+
+//---------------------------------------
+
+//----------------------------------------
+vesrion: 0.422
+
+MAIL FROM:<> BODY=8BITMIME - parameter parsing fix.
+
+//---------------------------------------
+
+//----------------------------------------
+vesrion: 0.421
+
+SMTP client supports now multiline 220 greetings.
+
+//---------------------------------------
+
+//----------------------------------------
+vesrion: 0.421
+
+Added SMTP PIPELINIG support 
+(eg. client can send now MAIL FROM:<aa@aa.aa><CRLF>RCPT TO:<q@w.e><CRLF>RCPT TO:<qqq@w.e><CRLF> ... - with one command)
+Because of it Core.ReadLine,ReadReply is rewritten.
+bug Environment.TickCount -> DateTime.Now.Ticks (Core.ReadLine,ReadReply) also fixed 
+
+SMTP client checks and adds SIZE param to "MAIL FROM:<> SIZE=xx". This avoids sending size exceeded messages.
+
+DoPeriodHandling: ASCII to ANSI, required for 8BITMIME implementation.
+
+Initial 8BITMIME support added
+
+
+//----------------------------------------
+
+//----------------------------------------
+vesrion: 0.420
+
+Sql db datatypes enlarged.(Problems with big addresses)
+NOTE: Tables(ls_xxx) altering must be done manually, who must keep data.
+
+Routing now supports *. eg. pattern='*' - routes all mails to specified mailbox.
+Routing can now route to remote addresses.
+
+//---------------------------------------
+
+//----------------------------------------
+vesrion: 0.419
+
+MimeMessage -> MimeConstructor (redesigned and written)
+Pop3Client added
+MimeParser added
+
+//---------------------------------------
+
+//----------------------------------------
+vesrion: 0.418
+
+SMTP client didn't handle 250-xxx<CRLF>
+			  250 aa<CRLF> - means end
+some cases right. Eg. if  250-xxx<CRLF> was sent and then 250 aa<CRLF>
+
+//---------------------------------------
+
+//----------------------------------------
+vesrion: 0.417
+
+SMTP serverdidn't report mail from: in NewMail event (It was '').
+
+//---------------------------------------
+
+//----------------------------------------
+vesrion: 0.416
+
+Security.xml - SartIP->StartIP
+
+//---------------------------------------
+
+//----------------------------------------
+vesrion: 0.415
+
+APOP cmd didn't report available messages in inbox
+APOP cmd didn't check if user loggied in already
+UIDL mulitline response added +OK to evry line, but must be +OK xxx<CRLF>1 kj13kj14n4<CRLF>.<CRLF>
+
+//---------------------------------------
+
+//----------------------------------------
+vesrion: 0.414
+
+APOP cmd didn't set authenticated flag
+TOP,UIDL - didn't check if authenticated
+POP3 you are not authenticated wasn't terminated <CRLF>
+
+
+//---------------------------------------
+
+
+//----------------------------------------
+vesrion: 0.413
+
+API+DB bug fixes
+Environment.TickCount -> DateTime.Now.Ticks (SMTP/POP3 sessions) 
+
+//---------------------------------------
+
+//----------------------------------------
+vesrion: 0.412
+
+Cache log writing (_LogWriter class), improves speed many X
+SMTP AUTH LOGIN - error fixed(actually didn't checked user)
+MailServer initial help(file) project added.
+Error handling moved from Component to Server.exe(See new event SysError in SMTP or POP3 server)
+Routing redesigned and added SQL support
+
+//---------------------------------------
+
+
+//----------------------------------------
+vesrion: 0.41
+
+APOP cmd for POP3 added
+SIZE cmd for SMTP added
+
+improved parameter parsing 
+//---------------------------------------
+
+
+
