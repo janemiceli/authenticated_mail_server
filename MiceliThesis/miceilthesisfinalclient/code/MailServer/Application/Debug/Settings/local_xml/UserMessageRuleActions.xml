@@ -1,0 +1,11 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <UserMessageRuleActions>
+    <UserID>bf3d52d1-ab1c-40ba-a008-14303e19a07b</UserID>
+    <RuleID>c2dca90a-3975-49fa-a097-40af45b1dfcc</RuleID>
+    <ActionID>39d7c2be-6969-4046-94f8-64716c28d3fa</ActionID>
+    <Description>fwd</Description>
+    <ActionType>3</ActionType>
+    <ActionData>77u/PEFjdGlvbkRhdGE+DQoJPEVtYWlsPml2eEBsdW1pc29mdC5lZTwvRW1haWw+DQo8L0FjdGlvbkRhdGE+</ActionData>
+  </UserMessageRuleActions>
+</NewDataSet>

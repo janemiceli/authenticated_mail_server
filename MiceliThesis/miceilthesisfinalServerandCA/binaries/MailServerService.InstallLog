@@ -1,0 +1,132 @@
+﻿Installing assembly 'D:\LumiSoft\MailServer\Application\Debug\MailServerService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = D:\LumiSoft\MailServer\Application\Debug\MailServerService.exe
+   logfile = D:\LumiSoft\MailServer\Application\Debug\MailServerService.InstallLog
+Installing service LumiSoft Mail Server...
+Service LumiSoft Mail Server has been successfully installed.
+Creating EventLog source LumiSoft Mail Server in log Application...
+Committing assembly 'D:\LumiSoft\MailServer\Application\Debug\MailServerService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = D:\LumiSoft\MailServer\Application\Debug\MailServerService.exe
+   logfile = D:\LumiSoft\MailServer\Application\Debug\MailServerService.InstallLog
+Uninstalling assembly 'D:\LumiSoft\MailServer\Application\Debug\MailServerService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = D:\LumiSoft\MailServer\Application\Debug\MailServerService.exe
+   logfile = D:\LumiSoft\MailServer\Application\Debug\MailServerService.InstallLog
+Removing EventLog source LumiSoft Mail Server.
+Service LumiSoft Mail Server is being removed from the system...
+Service LumiSoft Mail Server was successfully removed from the system.
+Installing assembly 'D:\LumiSoft\MailServer\Application\Debug\MailServerService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = D:\LumiSoft\MailServer\Application\Debug\MailServerService.exe
+   logfile = D:\LumiSoft\MailServer\Application\Debug\MailServerService.InstallLog
+Installing service LumiSoft Mail Server...
+Service LumiSoft Mail Server has been successfully installed.
+Creating EventLog source LumiSoft Mail Server in log Application...
+Committing assembly 'D:\LumiSoft\MailServer\Application\Debug\MailServerService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = D:\LumiSoft\MailServer\Application\Debug\MailServerService.exe
+   logfile = D:\LumiSoft\MailServer\Application\Debug\MailServerService.InstallLog
+Uninstalling assembly 'D:\LumiSoft\MailServer\Application\Debug\MailServerService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = D:\LumiSoft\MailServer\Application\Debug\MailServerService.exe
+   logfile = D:\LumiSoft\MailServer\Application\Debug\MailServerService.InstallLog
+Removing EventLog source LumiSoft Mail Server.
+Service LumiSoft Mail Server is being removed from the system...
+Service LumiSoft Mail Server was successfully removed from the system.
+Attempt to stop service LumiSoft Mail Server.
+Installing assembly 'D:\LumiSoft\MailServer\Application\Debug\MailServerService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = D:\LumiSoft\MailServer\Application\Debug\MailServerService.exe
+   logfile = D:\LumiSoft\MailServer\Application\Debug\MailServerService.InstallLog
+Installing service LumiSoft Mail Server...
+Service LumiSoft Mail Server has been successfully installed.
+Creating EventLog source LumiSoft Mail Server in log Application...
+Committing assembly 'D:\LumiSoft\MailServer\Application\Debug\MailServerService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = D:\LumiSoft\MailServer\Application\Debug\MailServerService.exe
+   logfile = D:\LumiSoft\MailServer\Application\Debug\MailServerService.InstallLog
+Uninstalling assembly 'D:\LumiSoft\MailServer\Application\Debug\MailServerService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = D:\LumiSoft\MailServer\Application\Debug\MailServerService.exe
+   logfile = D:\LumiSoft\MailServer\Application\Debug\MailServerService.InstallLog
+Removing EventLog source LumiSoft Mail Server.
+Service LumiSoft Mail Server is being removed from the system...
+Service LumiSoft Mail Server was successfully removed from the system.
+Installing assembly 'D:\LumiSoft\MailServer\Application\Debug\MailServerService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = D:\LumiSoft\MailServer\Application\Debug\MailServerService.exe
+   logfile = D:\LumiSoft\MailServer\Application\Debug\MailServerService.InstallLog
+Installing service LumiSoft Mail Server...
+Service LumiSoft Mail Server has been successfully installed.
+Creating EventLog source LumiSoft Mail Server in log Application...
+Committing assembly 'D:\LumiSoft\MailServer\Application\Debug\MailServerService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = D:\LumiSoft\MailServer\Application\Debug\MailServerService.exe
+   logfile = D:\LumiSoft\MailServer\Application\Debug\MailServerService.InstallLog
+Uninstalling assembly 'D:\LumiSoft\MailServer\Application\Debug\MailServerService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = D:\LumiSoft\MailServer\Application\Debug\MailServerService.exe
+   logfile = D:\LumiSoft\MailServer\Application\Debug\MailServerService.InstallLog
+Removing EventLog source LumiSoft Mail Server.
+Service LumiSoft Mail Server is being removed from the system...
+Service LumiSoft Mail Server was successfully removed from the system.
+Attempt to stop service LumiSoft Mail Server.
+Installing assembly 'D:\LumiSoft\MailServer\Application\Debug\MailServerService.exe'.
+Affected parameters are:
+   assemblypath = D:\LumiSoft\MailServer\Application\Debug\MailServerService.exe
+   logfile = D:\LumiSoft\MailServer\Application\Debug\MailServerService.InstallLog
+   logtoconsole = 
+Installing service LumiSoft Mail Server...
+Creating EventLog source LumiSoft Mail Server in log Application...
+Uninstalling assembly 'D:\LumiSoft\MailServer\Application\Debug\MailServerService.exe'.
+Affected parameters are:
+   assemblypath = D:\LumiSoft\MailServer\Application\Debug\MailServerService.exe
+   logfile = D:\LumiSoft\MailServer\Application\Debug\MailServerService.InstallLog
+   logtoconsole = 
+Rolling back assembly 'D:\LumiSoft\MailServer\Application\Debug\MailServerService.exe'.
+Affected parameters are:
+   assemblypath = D:\LumiSoft\MailServer\Application\Debug\MailServerService.exe
+   logfile = D:\LumiSoft\MailServer\Application\Debug\MailServerService.InstallLog
+   logtoconsole = 
+Restoring event log to previous state for source LumiSoft Mail Server.
+An exception occurred during the Rollback phase of the System.Diagnostics.EventLogInstaller installer.
+System.Security.SecurityException: The source was not found, but some or all event logs could not be searched.  Inaccessible logs: Security.
+An exception occurred during the Rollback phase of the installation. This exception will be ignored and the rollback will continue. However, the machine might not fully revert to its initial state after the rollback is complete.
+Installing assembly 'D:\LumiSoft\MailServer\Application\Debug\MailServerService.exe'.
+Affected parameters are:
+   assemblypath = D:\LumiSoft\MailServer\Application\Debug\MailServerService.exe
+   logfile = D:\LumiSoft\MailServer\Application\Debug\MailServerService.InstallLog
+   logtoconsole = 
+Installing service LumiSoft Mail Server...
+Creating EventLog source LumiSoft Mail Server in log Application...
+Rolling back assembly 'D:\LumiSoft\MailServer\Application\Debug\MailServerService.exe'.
+Affected parameters are:
+   assemblypath = D:\LumiSoft\MailServer\Application\Debug\MailServerService.exe
+   logfile = D:\LumiSoft\MailServer\Application\Debug\MailServerService.InstallLog
+   logtoconsole = 
+Restoring event log to previous state for source LumiSoft Mail Server.
+An exception occurred during the Rollback phase of the System.Diagnostics.EventLogInstaller installer.
+System.Security.SecurityException: The source was not found, but some or all event logs could not be searched.  Inaccessible logs: Security.
+An exception occurred during the Rollback phase of the installation. This exception will be ignored and the rollback will continue. However, the machine might not fully revert to its initial state after the rollback is complete.
+Uninstalling assembly 'D:\LumiSoft\MailServer\Application\Debug\MailServerService.exe'.
+Affected parameters are:
+   assemblypath = D:\LumiSoft\MailServer\Application\Debug\MailServerService.exe
+   logfile = D:\LumiSoft\MailServer\Application\Debug\MailServerService.InstallLog
+   logtoconsole = 
+Removing EventLog source LumiSoft Mail Server.
+An exception occurred during the uninstallation of the System.Diagnostics.EventLogInstaller installer.
+System.Security.SecurityException: The source was not found, but some or all event logs could not be searched.  Inaccessible logs: Security.
+An exception occurred while uninstalling. This exception will be ignored and the uninstall will continue. However, the application might not be fully uninstalled after the uninstall is complete.

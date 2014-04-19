@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="MailServerManager">
+</Property><Property Name="Solution File" Value="D:\LumiSoft\MailServer\MailServerManager\MailServerManager.sln">
+</Property><Property Name="Date" Value="20. november 2005. a.">
+</Property><Property Name="Time" Value="10:40">
+</Property></Properties><Event ErrorLevel="0" Project="MailServerManager" Source="MailServerManager.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="MailServerManager" Source="MailServerManager.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="MailServerManager.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="MailServerManager.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="MailServerManager" Source="MailServerManager.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

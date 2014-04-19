@@ -1,0 +1,623 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7AB36CCF-5FFD-4780-A54E-A102ECA028B5}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>LumiSoft.Net</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>LumiSoft.Net</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>LumiSoft.Net.xml</DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>LumiSoft.Net.xml</DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="RSAMiceli, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\RSAMiceli\bin\Debug\RSAMiceli.exe</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AUTH\AuthHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AUTH\Auth_HttpDigest.cs" />
+    <Compile Include="AUTH\Auth_HttpDigest_NonceManager.cs" />
+    <Compile Include="AUTH\SaslAuthTypes.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <None Include="HTTP\Server\HTTP_Server.cs">
+      <SubType>Component</SubType>
+    </None>
+    <None Include="HTTP\Server\HTTP_Session.cs" />
+    <Compile Include="Dns\Client\_OPCODE.cs" />
+    <Compile Include="IMAP\Client\IMAP_Acl.cs" />
+    <Compile Include="IMAP\Client\IMAP_Namespace.cs" />
+    <Compile Include="IMAP\Client\IMAP_NamespacesInfo.cs" />
+    <Compile Include="IMAP\Client\IMAP_Quota.cs" />
+    <Compile Include="IMAP\Server\IMAP_eArgs_GetMessagesInfo.cs" />
+    <Compile Include="IMAP\Server\IMAP_eArgs_GetQuota.cs" />
+    <Compile Include="IMAP\Server\IMAP_eArgs_MessageItems.cs" />
+    <Compile Include="IMAP\Server\IMAP_Message.cs" />
+    <Compile Include="IMAP\Server\IMAP_MessageCollection.cs" />
+    <Compile Include="IMAP\Server\IMAP_MessageItems_enum.cs" />
+    <Compile Include="Data\DbFile.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data\LDB_DataColumn.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data\LDB_DataColumnCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data\LDB_DataType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data\LDB_Record.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data\lsDB_FixedLengthRecord.cs" />
+    <Compile Include="Data\lsDB_FixedLengthTable.cs" />
+    <Compile Include="Data\_DataPage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data\_ldb_Utils.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Dns\Client\A_Record.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Dns\Client\CNAME_Record.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Dns\Client\DnsCache.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Dns\Client\DnsRecordBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Dns\Client\DnsServerResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Dns\Client\Dns_Client.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Dns\Client\HINFO_Record.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Dns\Client\MX_Record.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Dns\Client\NS_Record.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Dns\Client\PTR_Record.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Dns\Client\QTYPE.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Dns\Client\RCODE.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Dns\Client\SOA_Record.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Dns\Client\TXT_Record.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FTP\Client\FTP_Client.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FTP\Server\AuthUser_EventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FTP\Server\FileSysEntry_EventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FTP\Server\FTP_Server.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FTP\Server\FTP_Session.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ICMP\Icmp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IMAP\Client\IMAP_Client.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IMAP\Client\IMAP_FetchItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IMAP\Client\IMAP_FetchItem_Flags.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IMAP\IMAP_ACL_Flags.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IMAP\IMAP_BODY.cs" />
+    <Compile Include="IMAP\IMAP_Envelope.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IMAP\IMAP_MessageFlags.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IMAP\IMAP_SequenceSet.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IMAP\Server\AuthUser_EventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IMAP\Server\Folder_EventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IMAP\IMAP_BODY_Entity.cs" />
+    <Compile Include="IMAP\Server\IMAP_eArgs_DELETEACL.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IMAP\Server\IMAP_eArgs_GETACL.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IMAP\Server\IMAP_eArgs_GetUserACL.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <None Include="IMAP\Server\IMAP_eArgs_Search.cs">
+      <SubType>Code</SubType>
+    </None>
+    <Compile Include="IMAP\Server\IMAP_eArgs_SETACL.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IMAP\IMAP_Flags_SetType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IMAP\Server\IMAP_Folder.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IMAP\Server\IMAP_Folders.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IMAP\Server\IMAP_SearchGroup.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IMAP\Server\IMAP_SearchKey.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IMAP\Server\IMAP_SearchMatcher.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IMAP\Server\IMAP_SelectedFolder.cs" />
+    <Compile Include="IMAP\Server\IMAP_Server.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="IMAP\Server\IMAP_Session.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IMAP\Server\IMAP_Utils.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IMAP\Server\Message_EventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IMAP\Server\SharedRootFolders_EventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IMAP\Server\_FetchHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <None Include="IPSocket.cs" />
+    <Compile Include="IO\DataSizeExceededException.cs" />
+    <Compile Include="IO\IncompleteDataException.cs" />
+    <Compile Include="IO\LineSizeExceededException.cs" />
+    <Compile Include="IO\ReadLine_EventArgs.cs" />
+    <Compile Include="IO\ReadToStream_EventArgs.cs" />
+    <Compile Include="IO\SizeExceededAction.cs" />
+    <Compile Include="IO\WriteStream_EventArgs.cs" />
+    <Compile Include="IO\Write_EventArgs.cs" />
+    <Compile Include="JunkingStream.cs" />
+    <Compile Include="Log\LogEntry.cs" />
+    <Compile Include="Log\LogEntryType.cs" />
+    <Compile Include="Log\Logger.cs" />
+    <Compile Include="Mime\Address.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Mime\AddressList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Mime\ContentDisposition_enum.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Mime\ContentTransferEncoding_enum.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Mime\GroupAddress.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Mime\HeaderField.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Mime\HeaderFieldCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Mime\HeaderFieldParameter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Mime\HeaderFieldParameterCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Mime\MailboxAddress.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Mime\MailboxAddressCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Mime\MediaType_enum.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Mime\Mime.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Mime\MimeEntity.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Mime\MimeEntityCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Mime\MimeUtils.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Mime\ParametizedHeaderField.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Mime\vCard\DeliveryAddress.cs" />
+    <Compile Include="Mime\vCard\DeliveryAddressCollection.cs" />
+    <Compile Include="Mime\vCard\DeliveryAddressType_enum.cs" />
+    <Compile Include="Mime\vCard\EmailAddress.cs" />
+    <Compile Include="Mime\vCard\EmailAddressCollection.cs" />
+    <Compile Include="Mime\vCard\EmailAddressType_enum.cs" />
+    <Compile Include="Mime\vCard\Item.cs" />
+    <Compile Include="Mime\vCard\ItemCollection.cs" />
+    <Compile Include="Mime\vCard\Name.cs" />
+    <Compile Include="Mime\vCard\PhoneNumber.cs" />
+    <Compile Include="Mime\vCard\PhoneNumberCollection.cs" />
+    <Compile Include="Mime\vCard\PhoneNumberType_enum.cs" />
+    <Compile Include="Mime\vCard\vCard.cs" />
+    <Compile Include="Net_Core.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="NNTP\Client\NNTP_Client.cs" />
+    <Compile Include="POP3\Client\POP3_Client.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="POP3\Client\POP3_MessageInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="POP3\Client\POP3_MessagesInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="POP3\Server\AuthUser_EventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="POP3\Server\GetMessagesInfo_EventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="POP3\Server\POP3_eArgs_GetMessageStream.cs" />
+    <Compile Include="POP3\Server\POP3_Message.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="POP3\Server\POP3_MessageCollection.cs" />
+    <Compile Include="POP3\Server\POP3_Message_EventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="POP3\Server\POP3_Server.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="POP3\Server\POP3_Session.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="SIP\Message\SIP_OptionTags.cs" />
+    <Compile Include="SIP\Message\SIP_Parameter.cs" />
+    <Compile Include="SIP\Message\SIP_ParameterCollection.cs" />
+    <Compile Include="SIP\Message\SIP_t_ACValue.cs" />
+    <Compile Include="SIP\Message\SIP_t_ContentDisposition.cs" />
+    <Compile Include="SIP\Message\SIP_t_Directive.cs" />
+    <Compile Include="SIP\Message\SIP_t_Event.cs" />
+    <Compile Include="SIP\Message\SIP_t_EventType.cs" />
+    <Compile Include="SIP\Message\SIP_t_HiEntry.cs" />
+    <Compile Include="SIP\Message\SIP_t_IdentityInfo.cs" />
+    <Compile Include="SIP\Message\SIP_t_Join.cs" />
+    <Compile Include="SIP\Message\SIP_t_MinSE.cs" />
+    <Compile Include="SIP\Message\SIP_t_RAck.cs" />
+    <Compile Include="SIP\Message\SIP_t_RCValue.cs" />
+    <Compile Include="SIP\Message\SIP_t_ReasonValue.cs" />
+    <Compile Include="SIP\Message\SIP_t_ReferredBy.cs" />
+    <Compile Include="SIP\Message\SIP_t_ReferSub.cs" />
+    <Compile Include="SIP\Message\SIP_t_Replaces.cs" />
+    <Compile Include="SIP\Message\SIP_t_RetryAfter.cs" />
+    <Compile Include="SIP\Message\SIP_t_RValue.cs" />
+    <Compile Include="SIP\Message\SIP_t_SecMechanism.cs" />
+    <Compile Include="SIP\Message\SIP_t_SessionExpires.cs" />
+    <Compile Include="SIP\Message\SIP_t_SubscriptionState.cs" />
+    <Compile Include="SIP\Message\SIP_t_TargetDialog.cs" />
+    <Compile Include="SIP\Message\SIP_WarningCodes.cs" />
+    <Compile Include="SIP\Proxy\SIP_AuthenticateEventArgs.cs" />
+    <Compile Include="SIP\Proxy\SIP_Registrar.cs" />
+    <Compile Include="SIP\Stack\SIP_Destination.cs" />
+    <Compile Include="SIP\Proxy\SIP_Presence.cs" />
+    <Compile Include="SIP\Proxy\SIP_ProxyContext.cs" />
+    <Compile Include="SIP\Stack\SIP_EndPointInfo.cs" />
+    <Compile Include="SIP\Stack\SIP_Methods.cs" />
+    <Compile Include="SIP\Message\SIP_ParseException.cs" />
+    <Compile Include="SIP\Stack\SIP_StatusCodeType.cs" />
+    <Content Include="master.kez">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="master.pke">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="_junk\SIP_t_Event.cs" />
+    <Compile Include="SIP\Proxy\SIP_ForkingMode.cs" />
+    <Compile Include="SIP\Stack\SIP_Transport.cs" />
+    <Compile Include="SIP\SIP_ValidateRequestEventArgs.cs" />
+    <Compile Include="STUN\Client\STUN_Client.cs" />
+    <Compile Include="STUN\Client\STUN_Result.cs" />
+    <Compile Include="STUN\Message\STUN_Message.cs" />
+    <Compile Include="STUN\Message\STUN_MessageType.cs" />
+    <Compile Include="STUN\Message\STUN_t_ChangeRequest.cs" />
+    <Compile Include="STUN\Message\STUN_t_ErrorCode.cs" />
+    <Compile Include="STUN\Client\STUN_NetType.cs" />
+    <Compile Include="_Obsolete\ReadException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ServersCore\BindInfo.cs" />
+    <Compile Include="CircleCollection.cs" />
+    <Compile Include="ServersCore\BindInfoProtocol.cs" />
+    <Compile Include="ServersCore\commonDelegates.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ServersCore\Error_EventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <None Include="_junk\ISocketServerSession.cs">
+      <SubType>Code</SubType>
+    </None>
+    <Compile Include="ServersCore\Log_EventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ServersCore\SocketBufferedWriter.cs" />
+    <Compile Include="ServersCore\SocketCallBackResult.cs" />
+    <Compile Include="ServersCore\SocketLogEntry.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ServersCore\SocketLogEntryType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ServersCore\SocketLogger.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ServersCore\SocketServer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ServersCore\ValidateIP_EventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <None Include="SIP\Client\SIP_Client.cs" />
+    <Compile Include="SIP\Message\SIP_MVGroupHFCollection.cs" />
+    <Compile Include="SIP\Message\SIP_SVGroupHFCollection.cs" />
+    <Compile Include="SIP\Message\SIP_t_Challenge.cs" />
+    <Compile Include="SIP\Message\SIP_t_Encoding.cs" />
+    <Compile Include="SIP\Message\SIP_t_Language.cs" />
+    <Compile Include="SIP\Message\SIP_t_AcceptRange.cs" />
+    <Compile Include="SIP\Message\SIP_t_AlertParam.cs" />
+    <Compile Include="SIP\Message\SIP_t_Method.cs" />
+    <Compile Include="SIP\Message\SIP_t_AuthenticationInfo.cs" />
+    <Compile Include="SIP\Message\SIP_t_Info.cs" />
+    <Compile Include="SIP\Message\SIP_t_ContentCoding.cs" />
+    <Compile Include="SIP\Message\SIP_t_LanguageTag.cs" />
+    <Compile Include="SIP\Message\SIP_t_Credentials.cs" />
+    <Compile Include="SIP\Message\SIP_t_CSeq.cs" />
+    <Compile Include="SIP\Message\SIP_t_ErrorUri.cs" />
+    <Compile Include="SIP\Message\SIP_t_From.cs" />
+    <Compile Include="SIP\Message\SIP_t_CallID.cs" />
+    <Compile Include="SIP\Message\SIP_t_OptionTag.cs" />
+    <Compile Include="SIP\Message\SIP_t_To.cs" />
+    <Compile Include="SIP\Message\SIP_t_WarningValue.cs" />
+    <Compile Include="SIP\Message\SIP_MultiValueHF.cs" />
+    <Compile Include="SIP\Message\SIP_SingleValueHF.cs" />
+    <Compile Include="SIP\Message\SIP_t_AddressParam.cs" />
+    <Compile Include="SIP\Message\SIP_t_Timestamp.cs" />
+    <Compile Include="SIP\Message\SIP_t_Value.cs" />
+    <Compile Include="SIP\Message\SIP_t_ValueWithParams.cs" />
+    <Compile Include="SIP\Message\SIP_t_ViaParm.cs" />
+    <Compile Include="SIP\Stack\SIP_RequestReceivedEventArgs.cs" />
+    <Compile Include="SIP\Stack\SIP_ResponseReceivedEventArgs.cs" />
+    <Compile Include="SIP\Stack\SIP_TransportException.cs" />
+    <Compile Include="SIP\Proxy\SIP_ProxyMode.cs" />
+    <Compile Include="SIP\Stack\SIP_Transaction.cs" />
+    <Compile Include="SIP\Message\SIP_Message.cs" />
+    <Compile Include="SIP\Message\SIP_t_NameAddress.cs" />
+    <Compile Include="SIP\Stack\SIP_ClientTransaction.cs" />
+    <Compile Include="SIP\Stack\SIP_ClientTransactionState.cs" />
+    <Compile Include="SIP\Message\SIP_HeaderField.cs" />
+    <Compile Include="SIP\Message\SIP_HeaderFieldCollection.cs" />
+    <Compile Include="SDP\SDP_Attribute.cs" />
+    <Compile Include="SDP\SDP_ConnectionData.cs" />
+    <Compile Include="SDP\SDP_MediaDescription.cs" />
+    <Compile Include="SDP\SDP_Media.cs" />
+    <Compile Include="SDP\SDP.cs" />
+    <Compile Include="SDP\SDP_Time.cs" />
+    <None Include="_junk\SIP_Registrar.cs" />
+    <Compile Include="SIP\Proxy\SIP_Registration.cs" />
+    <Compile Include="SIP\Proxy\SIP_RegistrationCollection.cs" />
+    <Compile Include="SIP\Stack\SIP_Core.cs" />
+    <Compile Include="SIP\Proxy\SIP_RegistrationContact.cs" />
+    <Compile Include="SIP\Stack\SIP_Request.cs" />
+    <Compile Include="SIP\Stack\SIP_Response.cs" />
+    <Compile Include="SIP\Proxy\SIP_ProxyCore.cs" />
+    <Compile Include="SIP\Stack\SIP_ServerTransactionState.cs" />
+    <None Include="_junk\SipLogger.cs" />
+    <Compile Include="SIP\SIP_Utils.cs" />
+    <Compile Include="SIP\Message\SIP_t_ContactParam.cs" />
+    <Compile Include="SIP\Stack\SIP_Dialog.cs" />
+    <Compile Include="SIP\Stack\SIP_DialogState.cs" />
+    <Compile Include="SIP\Stack\SIP_ResponseCodes.cs" />
+    <Compile Include="SIP\Stack\SIP_ServerTransaction.cs" />
+    <Compile Include="SIP\Stack\SIP_Stack.cs" />
+    <Compile Include="SIP\Stack\SIP_TransactionLayer.cs" />
+    <Compile Include="SIP\Stack\SIP_TransportLayer.cs" />
+    <Compile Include="SIP\SIP_Uri.cs" />
+    <Compile Include="SMTP\BodyType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SMTP\Client\SmtpClientEx.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SMTP\Server\AuthUser_EventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SMTP\Server\GetMessageStoreStream_eArgs.cs" />
+    <Compile Include="SMTP\Server\MessageStoringCompleted_eArgs.cs" />
+    <Compile Include="SMTP\Server\SmtpServerReply.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SMTP\Server\SMTP_Server.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SMTP\Server\SMTP_Session.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SMTP\Server\ValidateMailboxSize_EventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SMTP\Server\ValidateRecipient_EventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SMTP\Server\ValidateSender_EventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SMTP\Server\_SMTP_Cmd_Validator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SocketEx.cs" />
+    <Compile Include="IO\StreamHelper.cs" />
+    <Compile Include="_Obsolete\StreamLineReader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="StringReader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TextUtils.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <None Include="AUTH\AuthType.cs">
+      <SubType>Code</SubType>
+    </None>
+    <None Include="FTP\Server\readme.txt" />
+    <Compile Include="ServersCore\SocketServerSession.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="message.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="messageencryptedbymaster.txt" />
+    <Content Include="messageencryptedbyserver1.txt" />
+    <Content Include="messageencryptedbyserver2.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="_Stuff\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

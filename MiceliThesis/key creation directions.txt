@@ -1,0 +1,10 @@
+Double click on RSAMiceli.exe
+Click on “Encryption” in the menu bar
+Select ”Generate Key Pair”
+Select bit strength
+Click on “Generate Keys”
+Name files and save
+
+Specify the Certificate Authority file names as “master” and put in binary folder for server
+Specify the Keys file name for client encryption as “Server2” and put in binary folder for client
+Specific the keys file name for server encryption as “Server1” and put in binary folder for server

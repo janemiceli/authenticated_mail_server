@@ -1,0 +1,91 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Settings>
+    <SMTP_Threads>1000</SMTP_Threads>
+    <POP3_Threads>1000</POP3_Threads>
+    <SmartHost>mail.neti.ee</SmartHost>
+    <SmartHostPort>25</SmartHostPort>
+    <UseSmartHost>False</UseSmartHost>
+    <Dns1>194.126.115.18</Dns1>
+    <Dns2>194.126.101.34</Dns2>
+    <LogSMTPCmds>False</LogSMTPCmds>
+    <LogPOP3Cmds>False</LogPOP3Cmds>
+    <SMTP_SessionIdleTimeOut>300</SMTP_SessionIdleTimeOut>
+    <SMTP_MaxBadCommands>8</SMTP_MaxBadCommands>
+    <POP3_SessionIdleTimeOut>300</POP3_SessionIdleTimeOut>
+    <POP3_MaxBadCommands>8</POP3_MaxBadCommands>
+    <MaxMessageSize>10</MaxMessageSize>
+    <MaxRecipients>100</MaxRecipients>
+    <MaxRelayThreads>30</MaxRelayThreads>
+    <RelayInterval>30</RelayInterval>
+    <RelayRetryInterval>60</RelayRetryInterval>
+    <RelayUndeliveredWarning>5</RelayUndeliveredWarning>
+    <RelayUndelivered>1</RelayUndelivered>
+    <UndeliveredWarningTemplate>
+Your message could not immedeately delivered to following recipient &lt;#RECEPTIENT&gt;
+        Server returned error: "&lt;#ERROR&gt;"
+ 
+         NOTE: Server will try to deliver this message for &lt;#UNDELIVERED_HOURS&gt; hours.
+
+
+For more detail about this message, please look at the attachment data.eml.</UndeliveredWarningTemplate>
+    <UndeliveredTemplate>
+Your message didn't reach the following recipient &lt;#RECEPTIENT&gt;
+        Server returned error: "&lt;#ERROR&gt;"
+
+For more detail about this message, please look at the attachment data.eml.</UndeliveredTemplate>
+    <StoreUndeliveredMessages>True</StoreUndeliveredMessages>
+    <SMTP_LogPath />
+    <POP3_LogPath />
+    <IMAP_LogPath />
+    <IMAP_SessionIdleTimeOut>800</IMAP_SessionIdleTimeOut>
+    <IMAP_CommandIdleTimeOut>60</IMAP_CommandIdleTimeOut>
+    <IMAP_MaxBadCommands>10</IMAP_MaxBadCommands>
+    <LogIMAPCmds>False</LogIMAPCmds>
+    <IMAP_Threads>1000</IMAP_Threads>
+    <SMTP_Enabled>True</SMTP_Enabled>
+    <POP3_Enabled>True</POP3_Enabled>
+    <IMAP_Enabled>True</IMAP_Enabled>
+    <SMTP_DefaultDomain />
+    <RelayStore>c:\MailStore\</RelayStore>
+    <SMTP_HostName />
+    <POP3_HostName />
+    <IMAP_HostName />
+    <LogRelayCmds>False</LogRelayCmds>
+    <Relay_LogPath />
+    <SmartHostUserName />
+    <SmartHostPassword />
+    <RelayLocalIP>0.0.0.0</RelayLocalIP>
+    <LogFetchPOP3Cmds>False</LogFetchPOP3Cmds>
+    <FetchPOP3_LogPath />
+    <SMTP_RequireAuth>False</SMTP_RequireAuth>
+    <Relay_SmartHost_UseSSL>False</Relay_SmartHost_UseSSL>
+    <FetchPOP3_Interval>300</FetchPOP3_Interval>
+    <SMTP_GreetingText />
+    <POP3_GreetingText />
+    <IMAP_GreetingText />
+    <ServerAuthenticationType>1</ServerAuthenticationType>
+    <ServerAuthWinDomain />
+    <FetchPop3_Enabled>True</FetchPop3_Enabled>
+    <Relay_HostName />
+    <Relay_SessionIdleTimeOut>30</Relay_SessionIdleTimeOut>
+    <SMTP_MaxConnectionsPerIP>0</SMTP_MaxConnectionsPerIP>
+    <POP3_MaxConnectionsPerIP>0</POP3_MaxConnectionsPerIP>
+    <IMAP_MaxConnectionsPerIP>0</IMAP_MaxConnectionsPerIP>
+  </Settings>
+  <SMTP_Bindings>
+    <IP>0.0.0.0</IP>
+    <Port>25</Port>
+    <SSL>false</SSL>
+  </SMTP_Bindings>
+  <POP3_Bindings>
+    <IP>0.0.0.0</IP>
+    <Port>110</Port>
+    <SSL>false</SSL>
+  </POP3_Bindings>
+  <IMAP_Bindings>
+    <IP>0.0.0.0</IP>
+    <Port>143</Port>
+    <SSL>false</SSL>
+  </IMAP_Bindings>
+</NewDataSet>

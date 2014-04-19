@@ -1,0 +1,7 @@
+..\Application\Debug\Mail Server Configuration.exe
+..\Application\Debug\Mail Server Configuration.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\Mail_Server_Configuration.Properties.Resources.resources
+obj\Debug\MailServerConfiguration.csproj.GenerateResource.Cache
+obj\Debug\Mail Server Configuration.exe
+obj\Debug\Mail Server Configuration.pdb

@@ -1,0 +1,42 @@
+
+       	                           
+//--- version: 0.92            
+*) Allow "Shared Folders" have personal flags foreach user, currently only shared flags. 
+*) Task scheduler. For example delete messages older than,send notification when quotta starts exceeding,
+   Backup server, ... .
+*) New: Allow to exclude mailing list members.
+   	For example if mailing list member is another mailing list, but you want to exclude 1
+	   email from it.
+	      Members:
+        	anotherMailingList
+	        !addressToExclude
+
+		! is exclude operator
+*) Dedect invalid DNS records. For example MX record points to mail server, but mailserver doesn't have such domain,
+   if relay is enabled to server IP, inifinite loop happens. 
+
+*) New: Relay to act as SMTP load balancher service.(xx.xx.2007)
+                          
+
+
+//--- version: 0.94
+*) Web Admin, Good web admin based on User API and no Windows.Forms UI ? 
+
+//--- version: 0.95
+*) Create up to date Help.
+*) Create install (.NET Windows.Forms app)
+
+
+
+//--- End of Version 1.0 planned features ---------------------------------------------------------------------------
+                       
+
+*) News server (NNTP) ??? Integrate with mail server or as separate project
+             
+
+
+
+
+
+
+

@@ -1,0 +1,30 @@
+﻿Uninstalling assembly 'C:\Documents and Settings\maryjane\Desktop\April 20\MailServer\Application\Release\MailServerService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = C:\Documents and Settings\maryjane\Desktop\April 20\MailServer\Application\Release\MailServerService.exe
+   logfile = C:\Documents and Settings\maryjane\Desktop\April 20\MailServer\Application\Release\MailServerService.InstallLog
+Removing EventLog source LumiSoft Mail Server.
+Service LumiSoft Mail Server is being removed from the system...
+Service LumiSoft Mail Server was successfully removed from the system.
+Attempt to stop service LumiSoft Mail Server.
+Installing assembly 'D:\Documents and Settings\miceli2\Desktop\April 20 a\MailServer\Application\Release\MailServerService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = D:\Documents and Settings\miceli2\Desktop\April 20 a\MailServer\Application\Release\MailServerService.exe
+   logfile = D:\Documents and Settings\miceli2\Desktop\April 20 a\MailServer\Application\Release\MailServerService.InstallLog
+Installing service LumiSoft Mail Server...
+Service LumiSoft Mail Server has been successfully installed.
+Creating EventLog source LumiSoft Mail Server in log Application...
+Committing assembly 'D:\Documents and Settings\miceli2\Desktop\April 20 a\MailServer\Application\Release\MailServerService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = D:\Documents and Settings\miceli2\Desktop\April 20 a\MailServer\Application\Release\MailServerService.exe
+   logfile = D:\Documents and Settings\miceli2\Desktop\April 20 a\MailServer\Application\Release\MailServerService.InstallLog
+Uninstalling assembly 'D:\Documents and Settings\miceli2\Desktop\April 20 a\MailServer\Application\Release\MailServerService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = D:\Documents and Settings\miceli2\Desktop\April 20 a\MailServer\Application\Release\MailServerService.exe
+   logfile = D:\Documents and Settings\miceli2\Desktop\April 20 a\MailServer\Application\Release\MailServerService.InstallLog
+Removing EventLog source LumiSoft Mail Server.
+Service LumiSoft Mail Server is being removed from the system...
+Service LumiSoft Mail Server was successfully removed from the system.

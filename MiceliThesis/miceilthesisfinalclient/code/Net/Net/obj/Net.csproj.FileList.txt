@@ -1,0 +1,11 @@
+obj\Debug\ResolveAssemblyReference.cache
+bin\Debug\master.kez
+bin\Debug\master.pke
+bin\Debug\message.txt
+bin\Debug\LumiSoft.Net.dll
+bin\Debug\LumiSoft.Net.pdb
+bin\Debug\LumiSoft.Net.xml
+bin\Debug\RSAMiceli.exe
+bin\Debug\RSAMiceli.pdb
+obj\Debug\LumiSoft.Net.dll
+obj\Debug\LumiSoft.Net.pdb

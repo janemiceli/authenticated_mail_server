@@ -1,0 +1,135 @@
+﻿
+Running a transacted installation.
+
+Beginning the Install phase of the installation.
+See the contents of the log file for the D:\LumiSoft\MailServer\Application\Debug\MailServerService.exe assembly's progress.
+The file is located at D:\LumiSoft\MailServer\Application\Debug\MailServerService.InstallLog.
+
+The Install phase completed successfully, and the Commit phase is beginning.
+See the contents of the log file for the D:\LumiSoft\MailServer\Application\Debug\MailServerService.exe assembly's progress.
+The file is located at D:\LumiSoft\MailServer\Application\Debug\MailServerService.InstallLog.
+
+The Commit phase completed successfully.
+
+The transacted install has completed.
+
+
+The uninstall is beginning.
+See the contents of the log file for the D:\LumiSoft\MailServer\Application\Debug\MailServerService.exe assembly's progress.
+The file is located at D:\LumiSoft\MailServer\Application\Debug\MailServerService.InstallLog.
+
+The uninstall has completed.
+
+Running a transacted installation.
+
+Beginning the Install phase of the installation.
+See the contents of the log file for the D:\LumiSoft\MailServer\Application\Debug\MailServerService.exe assembly's progress.
+The file is located at D:\LumiSoft\MailServer\Application\Debug\MailServerService.InstallLog.
+
+The Install phase completed successfully, and the Commit phase is beginning.
+See the contents of the log file for the D:\LumiSoft\MailServer\Application\Debug\MailServerService.exe assembly's progress.
+The file is located at D:\LumiSoft\MailServer\Application\Debug\MailServerService.InstallLog.
+
+The Commit phase completed successfully.
+
+The transacted install has completed.
+
+
+The uninstall is beginning.
+See the contents of the log file for the D:\LumiSoft\MailServer\Application\Debug\MailServerService.exe assembly's progress.
+The file is located at D:\LumiSoft\MailServer\Application\Debug\MailServerService.InstallLog.
+
+The uninstall has completed.
+
+Running a transacted installation.
+
+Beginning the Install phase of the installation.
+See the contents of the log file for the D:\LumiSoft\MailServer\Application\Debug\MailServerService.exe assembly's progress.
+The file is located at D:\LumiSoft\MailServer\Application\Debug\MailServerService.InstallLog.
+
+The Install phase completed successfully, and the Commit phase is beginning.
+See the contents of the log file for the D:\LumiSoft\MailServer\Application\Debug\MailServerService.exe assembly's progress.
+The file is located at D:\LumiSoft\MailServer\Application\Debug\MailServerService.InstallLog.
+
+The Commit phase completed successfully.
+
+The transacted install has completed.
+
+
+The uninstall is beginning.
+See the contents of the log file for the D:\LumiSoft\MailServer\Application\Debug\MailServerService.exe assembly's progress.
+The file is located at D:\LumiSoft\MailServer\Application\Debug\MailServerService.InstallLog.
+
+The uninstall has completed.
+
+Running a transacted installation.
+
+Beginning the Install phase of the installation.
+See the contents of the log file for the D:\LumiSoft\MailServer\Application\Debug\MailServerService.exe assembly's progress.
+The file is located at D:\LumiSoft\MailServer\Application\Debug\MailServerService.InstallLog.
+
+The Install phase completed successfully, and the Commit phase is beginning.
+See the contents of the log file for the D:\LumiSoft\MailServer\Application\Debug\MailServerService.exe assembly's progress.
+The file is located at D:\LumiSoft\MailServer\Application\Debug\MailServerService.InstallLog.
+
+The Commit phase completed successfully.
+
+The transacted install has completed.
+
+
+The uninstall is beginning.
+See the contents of the log file for the D:\LumiSoft\MailServer\Application\Debug\MailServerService.exe assembly's progress.
+The file is located at D:\LumiSoft\MailServer\Application\Debug\MailServerService.InstallLog.
+
+The uninstall has completed.
+
+Running a transacted installation.
+
+Beginning the Install phase of the installation.
+See the contents of the log file for the D:\LumiSoft\MailServer\Application\Debug\MailServerService.exe assembly's progress.
+The file is located at D:\LumiSoft\MailServer\Application\Debug\MailServerService.InstallLog.
+
+
+The uninstall is beginning.
+See the contents of the log file for the D:\LumiSoft\MailServer\Application\Debug\MailServerService.exe assembly's progress.
+The file is located at D:\LumiSoft\MailServer\Application\Debug\MailServerService.InstallLog.
+An exception occurred during the uninstallation of the System.Configuration.Install.AssemblyInstaller installer.
+System.IO.IOException: The process cannot access the file 'D:\LumiSoft\MailServer\Application\Debug\MailServerService.InstallState' because it is being used by another process.
+An exception occurred while uninstalling. This exception will be ignored and the uninstall will continue. However, the application might not be fully uninstalled after the uninstall is complete.
+
+The uninstall has completed.
+
+An exception occurred during the Install phase.
+System.Security.SecurityException: The source was not found, but some or all event logs could not be searched.  Inaccessible logs: Security.
+
+The Rollback phase of the installation is beginning.
+See the contents of the log file for the D:\LumiSoft\MailServer\Application\Debug\MailServerService.exe assembly's progress.
+The file is located at D:\LumiSoft\MailServer\Application\Debug\MailServerService.InstallLog.
+
+The Rollback phase completed successfully.
+
+The transacted install has completed.
+
+Running a transacted installation.
+
+Beginning the Install phase of the installation.
+See the contents of the log file for the D:\LumiSoft\MailServer\Application\Debug\MailServerService.exe assembly's progress.
+The file is located at D:\LumiSoft\MailServer\Application\Debug\MailServerService.InstallLog.
+
+An exception occurred during the Install phase.
+System.Security.SecurityException: The source was not found, but some or all event logs could not be searched.  Inaccessible logs: Security.
+
+The Rollback phase of the installation is beginning.
+See the contents of the log file for the D:\LumiSoft\MailServer\Application\Debug\MailServerService.exe assembly's progress.
+The file is located at D:\LumiSoft\MailServer\Application\Debug\MailServerService.InstallLog.
+
+The Rollback phase completed successfully.
+
+The transacted install has completed.
+
+
+The uninstall is beginning.
+See the contents of the log file for the D:\LumiSoft\MailServer\Application\Debug\MailServerService.exe assembly's progress.
+The file is located at D:\LumiSoft\MailServer\Application\Debug\MailServerService.InstallLog.
+
+The uninstall has completed.

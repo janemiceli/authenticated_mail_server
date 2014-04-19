@@ -1,0 +1,7 @@
+Copy the micelithesiscserverandca folder to the client computer
+Open the binaries folder
+Double click on lsMailserver.exe and choose run as a service
+Open up the Mail Server Configuration.exe to set up a password that access the services
+Open the Mail Server Manager and login with password in previous step
+This will allow you to define the users, domains, and rules for the mail server to follow with email
+

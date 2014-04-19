@@ -1,0 +1,11 @@
+..\Application\Debug\lsMailServer.exe
+..\Application\Debug\message.txt
+..\Application\Debug\master.kez
+..\Application\Debug\master.pke
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\LumiSoft.MailServer.Resources.trayicon.ico
+obj\Debug\LumiSoft.MailServer.Resources.exit.ico
+obj\Debug\lsMailServer.exe
+obj\Debug\lsMailServer.pdb
+..\Application\Debug\lsMailServer.pdb
+..\Application\Debug\lsMailServer.xml

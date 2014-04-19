@@ -1,0 +1,3 @@
+#
+# This file holds message flags info for folder user(s), don't delete this file !
+#

@@ -1,0 +1,7 @@
+..\Application\Debug\MailServerService.exe
+..\Application\Debug\MailServerService.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\LumiSoft.MailServer.Properties.Resources.resources
+obj\Debug\MailServerService.csproj.GenerateResource.Cache
+obj\Debug\MailServerService.exe
+obj\Debug\MailServerService.pdb

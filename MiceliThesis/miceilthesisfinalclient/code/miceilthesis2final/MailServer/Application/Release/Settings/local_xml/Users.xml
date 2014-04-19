@@ -1,0 +1,15 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Users>
+    <UserID>e9af41ec-db12-414d-9501-0102b8caa982</UserID>
+    <FullName>test</FullName>
+    <UserName>test</UserName>
+    <Password>test</Password>
+    <Description>test</Description>
+    <DomainName />
+    <Mailbox_Size>20</Mailbox_Size>
+    <Enabled>true</Enabled>
+    <Permissions>14</Permissions>
+    <CreationTime>2008-04-20T14:17:59.09375-07:00</CreationTime>
+  </Users>
+</NewDataSet>

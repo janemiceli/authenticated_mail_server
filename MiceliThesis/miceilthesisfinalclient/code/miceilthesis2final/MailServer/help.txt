@@ -1,0 +1,66 @@
+
+//-----------------
+Contact:
+ ivar@lumisoft.ee
+ www.lumisoft.ee
+
+
+Installing and Uninstalling:
+
+Running as services (nt/2000/xp):
+  Just copy mailserver files(in Release folder) to some location in hdd.
+  run lsMailServer.exe, press Install as service.
+  Configure domians,users and settings.
+
+Running as Tray app (WIN98/nt/2000/xp)
+  Just copy mailserver files(in Release folder) to some location in hdd.
+  Configure domians,users and settings.
+  Add new shortcut to Windows Starup menu to '...\lsMailServer.exe trayapp' and restart windows.
+  (trayapp parameter to lsMailServer.exe forces server to run as TrayApp)
+
+    
+
+
+Using virus scanner:
+  *) Run lsVirusFilter.exe to configure your scan program.
+  *) Open lsMailserverManager.exe -> Filters tab
+  *) Click create new filter
+  *) Click .. button to load assebmbly -> select lsVirusFilter.exe
+  *) Write to class editbox LumiSoft.MailServer.lsVirusFilter
+  
+  NOTE: Default configured virus scanner is nav 2003, you can use any of 
+        cmd line virus scanner. For virus scan program parameters, see 
+        virus soft help for more.
+
+        Pass #FileName as file to scanned. For example: /scan /fix #FileName. 
+
+
+
+Known problems:
+
+*) Can't relay from client computers.
+   This is beacuse relay is enabled for client computer IP.
+
+   You have to options:
+        1) Allow relay for IP or IP range(in manager).
+        2) Setup smtp authentication in smtp client. User names and passwords are same as in pop3 account.
+
+*) Can't relay in server computer using localhost
+   This is beacuse relay is enabled for localhost.
+
+   You have two options:
+        1) Allow relay for IP 127.0.0.1(localhost) .
+        2) Setup smtp authentication in smtp client. User names and passwords are same as in pop3 account.
+
+*) Can't access smtp/pop3 from LAN or WAN
+        1) Check if in server security SMTP/POP3 access is enabled for your connecting IP.
+
+*) Can't recieve messages, but can telnet to public IP and MAIL FORM:<xxx>,RCPT TO:<your_adress@domain.xx> shows ok.
+        1) Check that you have MX record assosiated with your domain. 
+
+*) Can't recieve messages and get 550 reply, but user and domain exists.
+   Check that you don't running another smtp server software like IIS SMTP.
+
+   After register.bat must get mailServiceError.log with line "System:Only one usage of each socket address (protocol/network address/port) is normally permitted".
+
+

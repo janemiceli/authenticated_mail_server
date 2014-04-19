@@ -1,0 +1,9 @@
+bin\Debug\RSAMiceli.exe
+bin\Debug\RSAMiceli.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\RSACryptoPad.AboutForm.resources
+obj\Debug\RSACryptoPad.KeyPairGeneratorForm.resources
+obj\Debug\RSACryptoPad.MainForm.resources
+obj\Debug\RSAMiceli.csproj.GenerateResource.Cache
+obj\Debug\RSAMiceli.exe
+obj\Debug\RSAMiceli.pdb

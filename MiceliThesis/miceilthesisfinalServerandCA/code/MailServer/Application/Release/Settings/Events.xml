@@ -1,0 +1,14 @@
+<?xml version="1.0" standalone="yes"?>
+<dsEvents>
+  <Events>
+    <ID>8fd92b6a-b3d7-4cae-a96b-c7f4efbca128</ID>
+    <VirtualServer />
+    <CreateDate>2007-03-23T10:45:54.2842881+02:00</CreateDate>
+    <Type>0</Type>
+    <Text>An operation was attempted on something that is not a socket
+//------------- function: LumiSoft.MailServer.VirtualServer.OnServer_SysError()  23.03.2007 10:45:54------------//
+System : An operation was attempted on something that is not a socket
+   at System.Net.Sockets.Socket.Poll(Int32 microSeconds, SelectMode mode)
+   at LumiSoft.Net.SocketServer.StartProcCons() in D:\LumiSoft\Net\Net\ServersCore\SocketServer.cs:line 197</Text>
+  </Events>
+</dsEvents>

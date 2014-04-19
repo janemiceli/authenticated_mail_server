@@ -1,0 +1,12 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <UserMessageRules>
+    <UserID>bf3d52d1-ab1c-40ba-a008-14303e19a07b</UserID>
+    <RuleID>c2dca90a-3975-49fa-a097-40af45b1dfcc</RuleID>
+    <Cost>633016293072343750</Cost>
+    <Enabled>true</Enabled>
+    <CheckNextRuleIf>0</CheckNextRuleIf>
+    <Description>FWD</Description>
+    <MatchExpression>smtp.authenticated == false</MatchExpression>
+  </UserMessageRules>
+</NewDataSet>

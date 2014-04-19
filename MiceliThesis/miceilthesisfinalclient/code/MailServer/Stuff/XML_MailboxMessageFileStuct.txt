@@ -1,0 +1,9 @@
+<InternalHeader><CRLF>                                         
+#-MessageFlags:<SP>length(int32)<CRLF>                       -> Updateable
+#-InternalDate:<SP>INTERNALDATE<CRLF>                        -> ReadOnly
+#-Envelope:<SP>ENVELOPE_String<CRLF>                         -> ReadOnly
+#-Body:<SP>IMAP_Body_String<CRLF>                            -> ReadOnly
+[#-BodyStructure:<SP>IMAP_BODYSTRUCTURE_String<CRLF>]        -> ReadOnly
+</InternalHeader><CRLF>
+RFC822 Message
+...

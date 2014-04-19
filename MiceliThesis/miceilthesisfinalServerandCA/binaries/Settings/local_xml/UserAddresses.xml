@@ -1,0 +1,11 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <UserAddresses>
+    <UserID>119aa3a6-650a-4f46-bf63-b12faaeab58a</UserID>
+    <Address>test2domain@test2.banana.ee</Address>
+  </UserAddresses>
+  <UserAddresses>
+    <UserID>bf3d52d1-ab1c-40ba-a008-14303e19a07b</UserID>
+    <Address>test@cheeseandtaters.com</Address>
+  </UserAddresses>
+</NewDataSet>

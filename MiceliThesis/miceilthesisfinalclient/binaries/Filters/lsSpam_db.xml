@@ -1,0 +1,23 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <KewWords>
+    <Cost>100</Cost>
+    <KeyWord>http://bronzealliance.com</KeyWord>
+  </KewWords>
+  <KewWords>
+    <Cost>100</Cost>
+    <KeyWord>http://www.cobolite.com</KeyWord>
+  </KewWords>
+  <KewWords>
+    <Cost>100</Cost>
+    <KeyWord>make some serious cash</KeyWord>
+  </KewWords>
+  <ContentMd5>
+    <Description>Latest MS support virus</Description>
+    <EntryMd5Value>sJ4mwpJ1nWVGM9PI7QDRjQ==</EntryMd5Value>
+  </ContentMd5>
+  <ContentMd5>
+    <Description>29.01.2004 attachment virus</Description>
+    <EntryMd5Value>dq8+pFA03A6hG85ECsOt+A==</EntryMd5Value>
+  </ContentMd5>
+</NewDataSet>
